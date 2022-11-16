@@ -13,9 +13,7 @@ const Home = () => {
                     <div className='views-row'>
                         <div className='views-field views-field-field-bill'>
                             <div className='field-content'>
-                            <div className='billboard visible-md visible-lg visible-xl'>
                                 <MainBanner />
-                            </div>
                             </div>
                         </div>
                     </div>
