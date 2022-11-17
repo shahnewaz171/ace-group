@@ -1,7 +1,22 @@
 @font-face {
   font-family: 'Verlag XLight';
-  /* src: url('./fonts/Verlag XLight.otf'); */
-  src: url(fonts/Verlag\ XLight.otf);
+  src: url('./fonts/Verlag XLight.otf');
+}
+@font-face {
+  font-family: helvetica;
+  src: url('./fonts/Helvetica.ttf');
+}
+@font-face {
+  font-family: 'Verlag';
+  src: url('./fonts/Verlag-Light.ttf');
+}
+@font-face {
+  font-family: 'Verlag Black';
+  src: url('./fonts/Verlag-Black.otf');
+}
+@font-face {
+  font-family: 'Verlag Book';
+  src: url('./fonts/Verlag-Book.otf');
 }
 
 body {

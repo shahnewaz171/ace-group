@@ -1,5 +1,6 @@
 import React from 'react';
 import HeaderContact from '../HeaderContact/HeaderContact';
+import Insights from '../Insights/Insights';
 import MainBanner from '../MainBanner/MainBanner';
 import Navbar from '../Navbar/Navbar';
 import ServicesBanner from '../ServicesBanner/ServicesBanner';
@@ -29,6 +30,9 @@ const Home = () => {
 
         {/* services banner */}
         <ServicesBanner />
+
+        {/* Insights */}
+        <Insights />
        </>
     );
 };
