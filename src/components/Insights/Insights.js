@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Insights = () => {
-    
+
     return (
         <>
             <section className="views-element-container block block-views block-views-blockrelated-insights-block-1 clearfix" id="block-views-block-related-insights-block-1">
@@ -18,10 +18,10 @@ const Insights = () => {
                                 <ul>
                                     <li>
                                         <div className="views-field views-field-field-insight-category">
-                                            <div className="field-content"><a href="/taxonomy/term/15" hreflang="en">Pictures Entertainment</a></div>
+                                            <div className="field-content"><a href="/taxonomy/term/15" hrefLang="en">Pictures Entertainment</a></div>
                                         </div>
                                         <div className="views-field views-field-title">
-                                            <h3 className="field-content"><a href="/insights/ace-pictures-bags-coveted-world-media-festival-award" hreflang="en">ACE PICTURES BAGS COVETED WORLD MEDIA FESTIVAL AWARD</a></h3>
+                                            <h3 className="field-content"><a href="/insights/ace-pictures-bags-coveted-world-media-festival-award" hrefLang="en">ACE PICTURES BAGS COVETED WORLD MEDIA FESTIVAL AWARD</a></h3>
                                         </div>
                                         <div className="views-field views-field-body">
                                             <div className="field-content">
@@ -32,10 +32,10 @@ const Insights = () => {
                                     </li>
                                     <li>
                                         <div className="views-field views-field-field-insight-category">
-                                            <div className="field-content"><a href="/taxonomy/term/15" hreflang="en">Pictures Entertainment</a></div>
+                                            <div className="field-content"><a href="/taxonomy/term/15" hrefLang="en">Pictures Entertainment</a></div>
                                         </div>
                                         <div className="views-field views-field-title">
-                                            <h3 className="field-content"><a href="/insights/former-squash-champion-collaborates-ace-pictures-entertainment-produce-biopic-i-am-nicol-0" hreflang="en">FORMER SQUASH CHAMPION COLLABORATES WITH ACE PICTURES ENTERTAINMENT TO PRODUCE THE BIOPIC "I AM NICOL DAVID"</a></h3>
+                                            <h3 className="field-content"><a href="/insights/former-squash-champion-collaborates-ace-pictures-entertainment-produce-biopic-i-am-nicol-0" hrefLang="en">FORMER SQUASH CHAMPION COLLABORATES WITH ACE PICTURES ENTERTAINMENT TO PRODUCE THE BIOPIC "I AM NICOL DAVID"</a></h3>
                                         </div>
                                         <div className="views-field views-field-body">
                                             <div className="field-content">
@@ -46,10 +46,10 @@ const Insights = () => {
                                     </li>
                                     <li>
                                         <div className="views-field views-field-field-insight-category">
-                                            <div className="field-content"><a href="/taxonomy/term/4" hreflang="en">Holdings</a></div>
+                                            <div className="field-content"><a href="/taxonomy/term/4" hrefLang="en">Holdings</a></div>
                                         </div>
                                         <div className="views-field views-field-title">
-                                            <h3 className="field-content"><a href="/insights/announcement-ace-holdings-berhad" hreflang="en">ANNOUNCEMENT (ACE HOLDINGS BERHAD)</a></h3>
+                                            <h3 className="field-content"><a href="/insights/announcement-ace-holdings-berhad" hrefLang="en">ANNOUNCEMENT (ACE HOLDINGS BERHAD)</a></h3>
                                         </div>
                                         <div className="views-field views-field-body">
                                             <div className="field-content">

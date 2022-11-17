@@ -46,7 +46,7 @@ const ServicesBanner = () => {
                                     <div className="field-content slide-wrapper">
                                         <a href="/services/leasing" hrefLang="en">
                                         <div className="slide-inner">
-                                            <img src="https://www.acegroup.com.my/sites/default/files/2020-12/Contact-2_5.jpg" className="img img-responsive" alt='' />
+                                            <img src="https://www.acegroup.com.my/sites/default/files/2020-12/Contact-2_5.jpg" className="img img-fluid" alt='' />
                                         </div>
                                         <h4>Leasing</h4>
                                         </a>
@@ -56,7 +56,7 @@ const ServicesBanner = () => {
                                     <div className="field-content slide-wrapper">
                                         <a href="/services/private-equity" hrefLang="en">
                                         <div className="slide-inner">
-                                            <img src="https://www.acegroup.com.my/sites/default/files/2021-04/Contact2_13.jpg" className="img img-responsive"  alt='' />  
+                                            <img src="https://www.acegroup.com.my/sites/default/files/2021-04/Contact2_13.jpg" className="img img-fluid"  alt='' />  
                                         </div>
                                         <h4>Private Equity</h4>
                                         </a>
@@ -66,7 +66,7 @@ const ServicesBanner = () => {
                                     <div className="field-content slide-wrapper">
                                         <a href="/services/investment-bank" hrefLang="en">
                                         <div className="slide-inner">
-                                            <img src="https://www.acegroup.com.my/sites/default/files/2021-01/Contact2_0.jpg" className="img img-responsive" alt='' />   
+                                            <img src="https://www.acegroup.com.my/sites/default/files/2021-01/Contact2_0.jpg" className="img img-fluid" alt='' />   
                                         </div>
                                         <h4>Investment Bank</h4>
                                         </a>
@@ -76,7 +76,7 @@ const ServicesBanner = () => {
                                     <div className="field-content slide-wrapper">
                                         <a href="/services/capital-management" hrefLang="en">
                                         <div className="slide-inner">
-                                            <img src="https://www.acegroup.com.my/sites/default/files/2021-04/Contact2_14.jpg" className="img img-responsive" alt='' />  
+                                            <img src="https://www.acegroup.com.my/sites/default/files/2021-04/Contact2_14.jpg" className="img img-fluid" alt='' />  
                                         </div>
                                         <h4>Capital Management</h4>
                                         </a>
@@ -86,7 +86,7 @@ const ServicesBanner = () => {
                                     <div className="field-content slide-wrapper">
                                         <a href="/services/money-exchange" hrefLang="en">
                                         <div className="slide-inner">
-                                            <img src="https://www.acegroup.com.my/sites/default/files/2021-01/Contact2_4.jpg" className="img img-responsive" alt='' />   
+                                            <img src="https://www.acegroup.com.my/sites/default/files/2021-01/Contact2_4.jpg" className="img img-fluid" alt='' />   
                                         </div>
                                         <h4>Money Exchange </h4>
                                         </a>
@@ -96,7 +96,7 @@ const ServicesBanner = () => {
                                     <div className="field-content slide-wrapper">
                                         <a href="/services/credit" hrefLang="en">
                                         <div className="slide-inner">
-                                            <img src="https://www.acegroup.com.my/sites/default/files/2021-04/Contact2_5.jpg" className="img img-responsive" alt='' /> 
+                                            <img src="https://www.acegroup.com.my/sites/default/files/2021-04/Contact2_5.jpg" className="img img-fluid" alt='' /> 
                                         </div>
                                         <h4>Credit</h4>
                                         </a>

@@ -1,4 +1,6 @@
 import React from 'react';
+import Footer from '../Footer/Footer';
+import GetInTouchBanner from '../GetInTouchBanner/GetInTouchBanner';
 import HeaderContact from '../HeaderContact/HeaderContact';
 import Insights from '../Insights/Insights';
 import MainBanner from '../MainBanner/MainBanner';
@@ -33,6 +35,12 @@ const Home = () => {
 
         {/* Insights */}
         <Insights />
+
+        {/* Get in touch */}
+        <GetInTouchBanner />
+
+        {/* Footer section */}
+        <Footer />
        </>
     );
 };

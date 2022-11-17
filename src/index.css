@@ -6,7 +6,7 @@ body {
   background: #f5f5f5;
   /* color: #666; */
   color: #004a7d;
-  font-family: 'Verlag', helvetica, sans-serif;
+  font-family: 'Verlag', helvetica, sans-serif !important;
   letter-spacing: 0.8px;
   font-size: 16px;
   line-height: 1.6;
