@@ -1,0 +1,25 @@
+.billboard-mobile {
+  background-color: #ffffff;
+  background-image: url('https://www.acegroup.com.my/sites/default/files/2020-09/2_0.jpg');
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center top;
+  z-index: auto;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+}
+
+.billboard {
+  background-color: #ffffff;
+  background-image: url('https://www.acegroup.com.my/sites/default/files/2020-09/1_25.jpg');
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: left top;
+  z-index: auto;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+}

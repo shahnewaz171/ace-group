@@ -1,10 +1,47 @@
 import React from 'react';
+import Footer from '../Footer/Footer';
+import GetInTouchBanner from '../GetInTouchBanner/GetInTouchBanner';
+import HeaderContact from '../HeaderContact/HeaderContact';
+import Insights from '../Insights/Insights';
+import MainBanner from '../MainBanner/MainBanner';
+import Navbar from '../Navbar/Navbar';
+import ServicesBanner from '../ServicesBanner/ServicesBanner';
+import './Home.module.css';
 
 const Home = () => {
     return (
-        <div className=''>
-            <h1 className='text-danger'>THis is home page</h1>
-        </div>
+       <>
+        <Navbar />
+        {/* Main head banner section */}
+        <section>
+            <div className='home-block view view-home-page view-id-home_page view-display-id-block_1'>
+                <div className="view-content">
+                    <div className='views-row'>
+                        <div className='views-field views-field-field-bill'>
+                            <div className='field-content'>
+                                <MainBanner />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        {/* contact us info */}
+        <HeaderContact />
+
+        {/* services banner */}
+        <ServicesBanner />
+
+        {/* Insights */}
+        <Insights />
+
+        {/* Get in touch */}
+        <GetInTouchBanner />
+
+        {/* Footer section */}
+        <Footer />
+       </>
     );
 };
 
