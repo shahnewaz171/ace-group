@@ -2,6 +2,7 @@ import React from 'react';
 import HeaderContact from '../HeaderContact/HeaderContact';
 import MainBanner from '../MainBanner/MainBanner';
 import Navbar from '../Navbar/Navbar';
+import ServicesBanner from '../ServicesBanner/ServicesBanner';
 import './Home.module.css';
 
 const Home = () => {
@@ -25,6 +26,9 @@ const Home = () => {
 
         {/* contact us info */}
         <HeaderContact />
+
+        {/* services banner */}
+        <ServicesBanner />
        </>
     );
 };
