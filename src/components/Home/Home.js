@@ -1,4 +1,5 @@
 import React from 'react';
+import HeaderContact from '../HeaderContact/HeaderContact';
 import MainBanner from '../MainBanner/MainBanner';
 import Navbar from '../Navbar/Navbar';
 import './Home.module.css';
@@ -7,6 +8,7 @@ const Home = () => {
     return (
        <>
         <Navbar />
+        {/* Main head banner section */}
         <section>
             <div className='home-block view view-home-page view-id-home_page view-display-id-block_1'>
                 <div className="view-content">
@@ -20,6 +22,9 @@ const Home = () => {
                 </div>
             </div>
         </section>
+
+        {/* contact us info */}
+        <HeaderContact />
        </>
     );
 };
