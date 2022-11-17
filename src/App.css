@@ -427,6 +427,9 @@ body a[href='/v2.1/services/investment-management'] {
   .navbar-brand {
     display: none;
   }
+  .service-title {
+    text-align: center;
+  }
 }
 
 body .navbar .navbar-nav a {
