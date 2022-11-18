@@ -1586,8 +1586,13 @@ body .marbotnone {
 
   .insights-list li,
   body:not(.user-logged-in) .related-people .draggable {
-    /* margin-right: 10px; */
-    /* width: 32%; */
+    margin-right: 10px;
+    width: 32%;
+    /* cursor: grab !important; */
+  }
+  .discover .card {
+    margin-right: 0px !important;
+    width: 100% !important;
     cursor: grab !important;
   }
 

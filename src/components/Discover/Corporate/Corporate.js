@@ -33,7 +33,7 @@ const Corporate = () => {
     return (
         <>
             <section>
-                <div id="top" className='region region-content'>
+                <div id="top" className='region region-content discover'>
                     <section className="views-element-container block block-views block-views-blockdiscover-block-block-1 clearfix" id="exports">
                         <div className="form-group">
                             <div className="discover-page view view-discover-block view-id-discover_block view-display-id-block_1">
@@ -196,7 +196,7 @@ const Corporate = () => {
                     </section>
 
                     {/* our peoples */}
-                    <section class="views-element-container block block-views block-views-blockdiscover-leadership-team-block-1 clearfix" id="block-views-block-discover-leadership-team-block-1">
+                    <section class="views-element-container block block-views block-views-blockdiscover-leadership-team-block-1 clearfix">
                         <div class="form-group">
                             <div class="container padtop5rem padbot5rem related-people view view-discover-leadership-team view-id-discover_leadership_team view-display-id-block_1">
                                 <div class="view-header">
@@ -254,30 +254,6 @@ const Corporate = () => {
                                             </div>
                                         </div>
                                     </div>
-                                    {/* <div class="views-form">
-                                            <div class="">
-                                                <table id="draggableviews-table-discover-leadership-team-block-1" class="table table-hover table-striped">
-                                                    <tbody>
-                                                        <tr class="draggable">
-                                                            <td class="views-field views-field-title">
-                                                                <h3 class="card1 title"><a href="/people/y-bhg-tan-sri-dato-seri-dr-ting-chew-peh" hreflang="en">YBHG. TAN SRI DATO' SERI DR TING CHEW PEH</a></h3>
-                                                            </td>
-                                                            <td class="views-field views-field-field-billboard-description">
-                                                                <p class="card1 subtitle">GROUP CHAIRMAN</p>
-                                                            </td>
-                                                        </tr>
-                                                        <tr class="draggable">
-                                                            <td class="views-field views-field-title">
-                                                                <h3 class="card1 title"><a href="/people/annie-chang" hreflang="en">CHANG AI NEE, ANNIE</a></h3>
-                                                            </td>
-                                                            <td class="views-field views-field-field-billboard-description">
-                                                                <p class="card1 subtitle">GROUP MANAGING DIRECTOR</p>
-                                                            </td>
-                                                        </tr>
-                                                    </tbody>
-                                                </table>
-                                            </div>
-                                    </div> */}
                                 </div>
                             </div>
                         </div>
