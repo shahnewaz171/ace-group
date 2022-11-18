@@ -1,9 +1,11 @@
 import { size } from 'lodash';
 import React, { useState } from 'react';
-import { Link, useLocation } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
+import { HashLink } from 'react-router-hash-link';
 
 const Navbar = () => {
     const {pathname} = useLocation();
+    const navigate = useNavigate()
     const [navbarAnimation, setNavbarAnimation] = useState(false);
     const [activeList, setActiveList] = useState(false);
     const [showSubMenu, setShowSubMenu] = useState({});
@@ -27,6 +29,12 @@ const Navbar = () => {
     }
     const handleSmallDeviceMenu = (value) => {
         setShowSmallDeviceMenu({ [value]: true});
+    }
+
+    const goToDestination = (path) => {
+        if(path === 'strengths'){
+            navigate('');
+        }
     }
 
     return (
@@ -80,16 +88,24 @@ const Navbar = () => {
                                         <Link to="/" className="menu-back">&lt; Back</Link>
                                     </li>
                                     <li>
-                                        <Link to="/"><span>Corporate Video</span></Link>
+                                        <HashLink onClick={() => setActiveList(false)} to="/corporate#top">
+                                            <span>Corporate Video</span>
+                                        </HashLink>
                                     </li>
                                     <li>
-                                        <Link to="/"><span>Strength</span></Link>
+                                        <HashLink onClick={() => setActiveList(false)} to="/corporate#strength">
+                                            <span>Strength</span>
+                                        </HashLink>
                                     </li>
                                     <li>
-                                        <Link to="/"><span>Responsibility</span></Link>
+                                        <HashLink onClick={() => setActiveList(false)} to="/corporate#responsibility">
+                                            <span>Responsibility</span>
+                                        </HashLink>
                                     </li>
                                     <li>
-                                        <Link to="/"><span>Leading Experts</span></Link>
+                                        <HashLink onClick={() => setActiveList(false)} to="/corporate#exports">
+                                            <span>Leading Experts</span>
+                                        </HashLink>
                                     </li>
                                 </ul>
                                 <ul data-parentmenu="banking" className={`${showSubMenu?.banking ? 'show': ""}`} onMouseOver={ () => handleMouseOver ('banking')} onMouseOut={ () => handleMouseOut ('banking')}>

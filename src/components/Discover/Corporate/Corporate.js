@@ -33,8 +33,8 @@ const Corporate = () => {
     return (
         <>
             <section>
-                <div className='region region-content'>
-                    <section className="views-element-container block block-views block-views-blockdiscover-block-block-1 clearfix" id="block-views-block-discover-block-block-1">
+                <div id="top" className='region region-content'>
+                    <section className="views-element-container block block-views block-views-blockdiscover-block-block-1 clearfix" id="exports">
                         <div className="form-group">
                             <div className="discover-page view view-discover-block view-id-discover_block view-display-id-block_1">
                                 <div className="view-content">
@@ -63,30 +63,9 @@ const Corporate = () => {
                                                 </div>
                                             </div>
                                         </div>
-                                        <div className="views-field views-field-field-billboard-image">
-                                            <div className="field-content"></div>
-                                        </div>
-                                        <div className="views-field views-field-field-breaker-description">
-                                            <div className="field-content">
-                                                <div className="modal fade" tabIndex="-1" role="dialog">
-                                                    <div className="modal-dialog" role="document">
-                                                    <div className="modal-content">
-                                                        <div className="modal-header">
-                                                            <span aria-hidden="true">×</span>
-                                                        </div>
-                                                        <div className="modal-body">
-                                                        </div>
-                                                        <div className="modal-footer">
-                                                            Close
-                                                        </div>
-                                                    </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
                                         
                                         {/* sliders */}
-                                        <div className="views-field views-field-field-videos container bespoke-slider padtop5rem discover-youtube-slider">
+                                        <div id="strength" className="views-field views-field-field-videos container bespoke-slider padtop5rem discover-youtube-slider">
                                             <div className="field-content">
                                                 <div className="paragraph paragraph--type--slick-slider paragraph--view-mode--default">
                                                     <div className="layout layout--onecol">
@@ -187,7 +166,7 @@ const Corporate = () => {
                                             </div>
                                         </div>
                                         <div className="views-field views-field-field-breaker-description-1">
-                                            <div className="field-content">
+                                            <div id="responsibility" className="field-content">
                                                 <div className="billboard breaker1" style={{ backgroundImage: "url('https://www.acegroup.com.my/sites/default/files/2021-01/Contact_42.jpg')" }}>
                                                     <div className="billboard-center">
                                                         <h1 className="text-center mob-emphasize">RESPONSIBILITY.</h1>
