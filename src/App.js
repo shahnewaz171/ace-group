@@ -2,6 +2,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import "slick-carousel/slick/slick-theme.css";
 import "slick-carousel/slick/slick.css";
 import './App.css';
+import Contact from './components/Contact/Contact';
 import Home from "./components/Home/Home";
 import InsightsAll from './components/InsightsAll/InsightsAll';
 import Footer from './components/shared/Footer/Footer';
@@ -14,6 +15,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="insights" element={<InsightsAll />} />
+        <Route path="contact" element={<Contact />} />
       </Routes>
       {/* Footer section */}
       <Footer />

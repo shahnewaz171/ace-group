@@ -5,7 +5,7 @@ html {
 body {
   background: #f5f5f5;
   /* color: #666; */
-  color: #004a7d;
+  color: #004a7d !important;
   font-family: 'Verlag', helvetica, sans-serif !important;
   letter-spacing: 0.8px;
   font-size: 16px;

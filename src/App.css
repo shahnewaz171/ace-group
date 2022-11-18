@@ -43,6 +43,9 @@ form .form-control {
   box-shadow: none;
   /* font-size: 105%; */
 }
+form input.form-control {
+  height: 34px;
+}
 
 form .form-control.form-select {
   padding-bottom: 0;
@@ -143,6 +146,9 @@ body #navbar-collapse {
   font-size: 15px;
   font-weight: 600;
   letter-spacing: 1px;
+}
+.contact svg {
+  color: #004a7d !important;
 }
 
 .card1.description {
