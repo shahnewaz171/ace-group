@@ -4,6 +4,7 @@ import "slick-carousel/slick/slick.css";
 import './App.css';
 import Contact from './components/Contact/Contact';
 import Corporate from './components/Discover/Corporate/Corporate';
+import Holdings from './components/Holdings/Holdings';
 import Home from "./components/Home/Home";
 import InsightsAll from './components/InsightsAll/InsightsAll';
 import InvestmentBank from './components/InvestmentBank/InvestmentBank';
@@ -20,7 +21,8 @@ function App() {
         <Route path="insights" element={<InsightsAll />} />
         <Route path="contact" element={<Contact />} />
         <Route path="discovery" element={<Corporate />} />
-        <Route path="investment-bank" element={<InvestmentBank />} />
+        <Route path="services/investment-bank" element={<InvestmentBank />} />
+        <Route path="services/holdings" element={<Holdings />} />
       </Routes>
       {/* Footer section */}
       <Footer />
