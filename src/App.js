@@ -3,6 +3,7 @@ import "slick-carousel/slick/slick-theme.css";
 import "slick-carousel/slick/slick.css";
 import './App.css';
 import Contact from './components/Contact/Contact';
+import Corporate from './components/Discover/Corporate/Corporate';
 import Home from "./components/Home/Home";
 import InsightsAll from './components/InsightsAll/InsightsAll';
 import Footer from './components/shared/Footer/Footer';
@@ -16,6 +17,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="insights" element={<InsightsAll />} />
         <Route path="contact" element={<Contact />} />
+        <Route path="corporate" element={<Corporate />} />
       </Routes>
       {/* Footer section */}
       <Footer />

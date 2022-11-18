@@ -14,9 +14,17 @@ const GetInTouchBanner = () => {
                             <div className="getintouch">
                                 <img className="d-md-none img-fluid" src="https://www.acegroup.com.my/sites/default/files/2018-04/contat-landscape-mobile.jpg" alt='' />
                                 <div className="cta-wrapper">
-                                    {pathname === '/' && (<a className="new-cta white" href="/contact">
-                                        <span>GET IN TOUCH</span>
-                                    </a>)}
+                                    {(() => {
+                                        if(pathname === '/' || pathname === '/corporate'){
+                                            return (
+                                                <a className="new-cta white" href="/contact">
+                                                    <span>GET IN TOUCH</span>
+                                                </a>
+                                            )
+
+                                        }
+                                        return false;
+                                    })()}
                                     {pathname.includes('contact') && (<Link className="new-cta white" to="#" onClick={scrollToTop}>
                                         <span>BACK TO TOP</span>
                                     </Link>)}

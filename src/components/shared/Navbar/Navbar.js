@@ -37,10 +37,10 @@ const Navbar = () => {
                     <div className="navi-left"> </div>
                     <div className="navi-center">
                         <Link to="/" className={`logo navbar-btn ${activeList ? 'overlay' : ''}`}>
-                            {!pathname.includes('/insights') && (
+                            {!pathname.includes('/insights') && !pathname.includes('/corporate') && (
                                 <img src="https://www.acegroup.com.my/sites/default/files/logo-acegroup%402x-white.png" alt="Home" className='home-icon-white' />
                             )}
-                            <img src="https://www.acegroup.com.my/sites/default/files/logo-acegroup%402x.png" alt="Home" className={`${!pathname.includes('/insights') ? 'home-icon-blue' : ''}`} />
+                            <img src="https://www.acegroup.com.my/sites/default/files/logo-acegroup%402x.png" alt="Home" className={`${!pathname.includes('/insights') && !pathname.includes('/corporate') && 'home-icon-blue'}`} />
                         </Link>
                     </div>
                     <div className="navi-right">

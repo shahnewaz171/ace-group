@@ -25,6 +25,13 @@ body {
 ul {
   margin-bottom: 10px;
 }
+p {
+  margin: 0 0 10px;
+  margin-bottom: 0px;
+}
+table {
+  --bs-table-accent-bg: none !important;
+}
 body a:hover,
 body a:focus {
   color: #00233c;
@@ -1291,7 +1298,7 @@ body:not(.user-logged-in) .related-people .draggable {
   background: #fff !important;
   padding: 50px 40px;
   vertical-align: top;
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
 }
 
 body .insights-list li:last-child,
@@ -1348,6 +1355,9 @@ body .insights-list h3,
 body:not(.user-logged-in) .related-people .draggable h3 {
   margin-top: 5px;
   text-transform: uppercase;
+}
+.card {
+  border: none !important;
 }
 
 body .insights-list .views-field-field-insight-category,
@@ -1477,8 +1487,7 @@ body .billboard-mobile {
 
 body #video-embed-open,
 .video-embed-open-slider {
-  /* background: url(../../../sites/default/files/2017-09/icon-youtube-play.png)
-    no-repeat 0 0; */
+  background: url(./images/icon-youtube-play.png) no-repeat 0 0;
   height: 58px;
   width: 82px;
   display: inline-block;
@@ -1516,6 +1525,9 @@ body .video-embed-close {
   max-width: 200px;
   text-align: center;
   margin: auto;
+}
+.cursor-grap {
+  cursor: grab !important;
 }
 
 @media screen and (min-width: 900px) {
@@ -1574,8 +1586,9 @@ body .marbotnone {
 
   .insights-list li,
   body:not(.user-logged-in) .related-people .draggable {
-    margin-right: 10px;
-    width: 32%;
+    /* margin-right: 10px; */
+    /* width: 32%; */
+    cursor: grab !important;
   }
 
   .insights-list li:nth-child(3n),
