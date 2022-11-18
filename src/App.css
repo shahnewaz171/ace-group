@@ -1001,6 +1001,9 @@ body .getintouch .cta-wrapper {
   padding-right: 80px;
   margin-bottom: 50px;
 }
+.investment .slick-slider {
+  margin-bottom: 50px;
+}
 
 .discover.leading-experts-slider,
 /* .discover.leading-experts-slider .slide, */
@@ -1541,7 +1544,7 @@ body .discover-page .views-row {
   position: relative;
 }
 
-body .col-md-offset-2.col-md-8 h2 {
+body .offset-md-2.col-md-8 h2 {
   text-align: center;
   margin-bottom: 50px;
 }
@@ -1717,8 +1720,8 @@ body .marbotnone {
     padding-right: 40px;
   }
 
-  .col-md-offset-2.col-md-8.padbot9rem.padtop9rem,
-  .col-md-offset-1.col-md-10.padbot9rem.padtop9rem {
+  .offset-md-2.col-md-8.padbot9rem.padtop9rem,
+  .offset-md-1.col-md-10.padbot9rem.padtop9rem {
     padding-left: 25px;
     padding-right: 25px;
     padding-top: 50px;
@@ -1784,15 +1787,15 @@ body .marbotnone {
   }
 }
 
-body .col-md-offset-2.col-md-8.padbot9rem.padtop9rem,
-body .col-md-offset-1.col-md-10.padbot9rem.padtop9rem {
+body .offset-md-2.col-md-8.padbot9rem.padtop9rem,
+body .offset-md-1.col-md-10.padbot9rem.padtop9rem {
   padding-top: 50px;
 }
 
-body .col-md-offset-2.col-md-8.padbot9rem.padtop9rem h1,
-body .col-md-offset-1.col-md-10.padbot9rem.padtop9rem h1,
-body .col-md-offset-2.col-md-8.padbot9rem.padtop9rem h2,
-body .col-md-offset-1.col-md-10.padbot9rem.padtop9rem h2 {
+body .offset-md-2.col-md-8.padbot9rem.padtop9rem h1,
+body .offset-md-1.col-md-10.padbot9rem.padtop9rem h1,
+body .offset-md-2.col-md-8.padbot9rem.padtop9rem h2,
+body .offset-md-1.col-md-10.padbot9rem.padtop9rem h2 {
   margin-top: 0;
 }
 
@@ -1847,6 +1850,10 @@ body .insights .billboard h1 {
 
   margin-bottom: 50px;
 }
+.investment .billboard {
+  background-image: url('https://www.acegroup.com.my/sites/default/files/2021-01/Contact_1.jpg');
+  background-position: center center;
+}
 
 body
   .navbar
@@ -1889,6 +1896,9 @@ body
     text-align: left;
     padding-bottom: 0;
     color: #004a7d;
+  }
+  .investment .billboard {
+    display: none;
   }
 }
 

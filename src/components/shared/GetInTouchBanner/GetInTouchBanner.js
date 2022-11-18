@@ -15,7 +15,7 @@ const GetInTouchBanner = () => {
                                 <img className="d-md-none img-fluid" src="https://www.acegroup.com.my/sites/default/files/2018-04/contat-landscape-mobile.jpg" alt='' />
                                 <div className="cta-wrapper">
                                     {(() => {
-                                        if(pathname === '/' || pathname === '/corporate'){
+                                        if(pathname !== 'contact'){
                                             return (
                                                 <a className="new-cta white" href="/contact">
                                                     <span>GET IN TOUCH</span>

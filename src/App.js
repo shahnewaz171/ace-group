@@ -6,10 +6,12 @@ import Contact from './components/Contact/Contact';
 import Corporate from './components/Discover/Corporate/Corporate';
 import Home from "./components/Home/Home";
 import InsightsAll from './components/InsightsAll/InsightsAll';
+import InvestmentBank from './components/InvestmentBank/InvestmentBank';
 import Footer from './components/shared/Footer/Footer';
 import Navbar from './components/shared/Navbar/Navbar';
 
 function App() {
+  
   return (
     <Router>
       <Navbar />
@@ -17,7 +19,8 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="insights" element={<InsightsAll />} />
         <Route path="contact" element={<Contact />} />
-        <Route path="corporate" element={<Corporate />} />
+        <Route path="discovery" element={<Corporate />} />
+        <Route path="investment-bank" element={<InvestmentBank />} />
       </Routes>
       {/* Footer section */}
       <Footer />

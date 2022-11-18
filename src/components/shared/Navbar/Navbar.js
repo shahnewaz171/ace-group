@@ -45,10 +45,10 @@ const Navbar = () => {
                     <div className="navi-left"> </div>
                     <div className="navi-center">
                         <Link to="/" className={`logo navbar-btn ${activeList ? 'overlay' : ''}`}>
-                            {!pathname.includes('/insights') && !pathname.includes('/corporate') && (
+                            {(pathname === '/' || pathname.includes('/contact')) && (
                                 <img src="https://www.acegroup.com.my/sites/default/files/logo-acegroup%402x-white.png" alt="Home" className='home-icon-white' />
                             )}
-                            <img src="https://www.acegroup.com.my/sites/default/files/logo-acegroup%402x.png" alt="Home" className={`${!pathname.includes('/insights') && !pathname.includes('/corporate') && 'home-icon-blue'}`} />
+                            <img src="https://www.acegroup.com.my/sites/default/files/logo-acegroup%402x.png" alt="Home" className={`${(pathname === '/' || pathname.includes('/contact')) && 'home-icon-blue'}`} />
                         </Link>
                     </div>
                     <div className="navi-right">
@@ -88,22 +88,22 @@ const Navbar = () => {
                                         <Link to="/" className="menu-back">&lt; Back</Link>
                                     </li>
                                     <li>
-                                        <HashLink onClick={() => setActiveList(false)} to="/corporate#top">
+                                        <HashLink onClick={() => setActiveList(false)} to="/discovery#top">
                                             <span>Corporate Video</span>
                                         </HashLink>
                                     </li>
                                     <li>
-                                        <HashLink onClick={() => setActiveList(false)} to="/corporate#strength">
+                                        <HashLink onClick={() => setActiveList(false)} to="/discovery#strength">
                                             <span>Strength</span>
                                         </HashLink>
                                     </li>
                                     <li>
-                                        <HashLink onClick={() => setActiveList(false)} to="/corporate#responsibility">
+                                        <HashLink onClick={() => setActiveList(false)} to="/discovery#responsibility">
                                             <span>Responsibility</span>
                                         </HashLink>
                                     </li>
                                     <li>
-                                        <HashLink onClick={() => setActiveList(false)} to="/corporate#exports">
+                                        <HashLink onClick={() => setActiveList(false)} to="/discovery#exports">
                                             <span>Leading Experts</span>
                                         </HashLink>
                                     </li>
