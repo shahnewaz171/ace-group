@@ -2723,23 +2723,23 @@ a.new-cta.white span::after {
   list-style: none;
 }
 
-body .insights .pager li a {
+body .insights .pager li button {
   border: none;
   border-radius: 0;
   padding: 10px 18px;
 }
-.pager .previous > a,
+.pager .previous > button,
 .pager .previous > span {
   float: left;
 }
-.pager .next > a,
+.pager .next > button,
 .pager .next > span {
   float: right;
 }
 .pager .next {
-  margin-left: 2px;
+  margin-left: 4px;
 }
-.pager li > a,
+.pager li > button,
 .pager li > span {
   display: inline-block;
   padding: 5px 14px;
@@ -2747,13 +2747,13 @@ body .insights .pager li a {
   border: 1px solid #ddd;
   border-radius: 15px;
 }
-.pager li > a:hover,
-.pager li > a:focus {
+.pager li > button:hover,
+.pager li > button:focus {
   text-decoration: none;
   background-color: #eee;
 }
-.pager .next a span,
-.pager .previous a span {
+.pager .next button span,
+.pager .previous button span {
   font-family: 'Verlag Book';
   font-weight: 800;
 }

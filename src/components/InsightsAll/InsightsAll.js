@@ -146,14 +146,14 @@ const InsightsAll = () => {
                         <nav role="navigation" aria-labelledby="pagination-heading">
                             <ul className="pager js-pager__items">
                                 <li className="previous">
-                                    <a href="/views/ajax?page=3" title="Go to previous page" rel="prev">
+                                    <button title="Go to previous page" rel="prev">
                                         <span aria-hidden="true">‹ Previous</span>
-                                    </a>
+                                    </button>
                                 </li>
                                 <li className="next">
-                                    <a href="/insights?page=1" title="Go to next page" rel="next">
+                                    <button title="Go to next page" rel="next">
                                         <span aria-hidden="true">Next ›</span>
-                                    </a>
+                                    </button>
                                 </li>
                             </ul>
                         </nav>
