@@ -1811,8 +1811,7 @@ body .insights .billboard h1 {
 }
 .insights .billboard {
   background-color: #ffffff;
-  /* background-image: url(https://acegroup.com.my/v2.1/sites/default/files/billboard-insights.jpg); */
-  /* background-image: url(../../../sites/default/files/billboard-insights.jpg); */
+  background-image: url('https://www.acegroup.com.my/sites/default/files/billboard-insights.jpg');
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: left top;
@@ -2716,3 +2715,48 @@ a.new-cta.white span::after {
 }
 
 /* visible utilities */
+/* paginations */
+.pager {
+  padding-left: 0;
+  margin: 20px 0;
+  text-align: center;
+  list-style: none;
+}
+
+body .insights .pager li a {
+  border: none;
+  border-radius: 0;
+  padding: 10px 18px;
+}
+.pager .previous > a,
+.pager .previous > span {
+  float: left;
+}
+.pager .next > a,
+.pager .next > span {
+  float: right;
+}
+.pager .next {
+  margin-left: 2px;
+}
+.pager li > a,
+.pager li > span {
+  display: inline-block;
+  padding: 5px 14px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 15px;
+}
+.pager li > a:hover,
+.pager li > a:focus {
+  text-decoration: none;
+  background-color: #eee;
+}
+.pager .next a span,
+.pager .previous a span {
+  font-family: 'Verlag Book';
+  font-weight: 800;
+}
+.pager-select-bg {
+  background-color: #eee;
+}

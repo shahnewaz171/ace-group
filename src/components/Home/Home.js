@@ -1,17 +1,14 @@
 import React from 'react';
-import Footer from '../shared/Footer/Footer';
 import GetInTouchBanner from '../shared/GetInTouchBanner/GetInTouchBanner';
 import HeaderContact from '../shared/HeaderContact/HeaderContact';
 import Insights from '../shared/Insights/Insights';
 import MainBanner from '../shared/MainBanner/MainBanner';
-import Navbar from '../shared/Navbar/Navbar';
 import ServicesBanner from '../shared/ServicesBanner/ServicesBanner';
 import './Home.module.css';
 
 const Home = () => {
     return (
        <>
-        <Navbar />
         {/* Main head banner section */}
         <section>
             <div className='home-block view view-home-page view-id-home_page view-display-id-block_1'>
@@ -38,9 +35,6 @@ const Home = () => {
 
         {/* Get in touch */}
         <GetInTouchBanner />
-
-        {/* Footer section */}
-        <Footer />
        </>
     );
 };

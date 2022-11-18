@@ -1,8 +1,9 @@
 import { size } from 'lodash';
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 
 const Navbar = () => {
+    const {pathname} = useLocation();
     const [navbarAnimation, setNavbarAnimation] = useState(false);
     const [activeList, setActiveList] = useState(false);
     const [showSubMenu, setShowSubMenu] = useState({});
@@ -36,8 +37,10 @@ const Navbar = () => {
                     <div className="navi-left"> </div>
                     <div className="navi-center">
                         <Link to="/" className={`logo navbar-btn ${activeList ? 'overlay' : ''}`}>
-                            <img src="https://www.acegroup.com.my/sites/default/files/logo-acegroup%402x-white.png" alt="Home" className='home-icon-white' />
-                            <img src="https://www.acegroup.com.my/sites/default/files/logo-acegroup%402x.png" alt="Home" className='home-icon-blue' />
+                            {!pathname.includes('/insights') && (
+                                <img src="https://www.acegroup.com.my/sites/default/files/logo-acegroup%402x-white.png" alt="Home" className='home-icon-white' />
+                            )}
+                            <img src="https://www.acegroup.com.my/sites/default/files/logo-acegroup%402x.png" alt="Home" className={`${!pathname.includes('/insights') ? 'home-icon-blue' : ''}`} />
                         </Link>
                     </div>
                     <div className="navi-right">
