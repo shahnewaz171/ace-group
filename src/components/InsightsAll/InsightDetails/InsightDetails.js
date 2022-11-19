@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { scrollToTop } from '../../shared/customMethod/scrollToTop';
 import GetInTouchBanner from '../../shared/GetInTouchBanner/GetInTouchBanner';
 import HeaderContact from '../../shared/HeaderContact/HeaderContact';
 import Insights from '../../shared/Insights/Insights';
@@ -16,7 +17,7 @@ const InsightDetails = () => {
                             <div className="views-row">
                                 <div className="views-field views-field-title insights-header container">
                                     <div className="field-content offset-md-1 col-md-10">
-                                        <span className="insights-info fw-bold"><Link to="/taxonomy/term/15" hrefLang="en">Pictures Entertainment</Link>, 30 June 2021</span>
+                                        <span className="insights-info fw-bold"><Link to="/taxonomy/term/15" onClick={scrollToTop}>Pictures Entertainment</Link>, 30 June 2021</span>
                                         <h1>ACE PICTURES BAGS COVETED WORLD MEDIA FESTIVAL AWARD</h1>
                                     </div>
                                 </div>
