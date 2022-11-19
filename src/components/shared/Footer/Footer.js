@@ -64,7 +64,7 @@ const Footer = () => {
                             <Link to="/services/pictures-entertainment" data-drupal-link-system-path="node/41">Pictures Entertainment</Link>
                             </li>
                             <li>
-                            <Link to="https://Linkcegroup.com.my/services/advisory">Advisory</Link>
+                                <a href="https://Linkcegroup.com.my/services/advisory">Advisory</a>
                             </li>
                         </ul>
                     </nav>
@@ -72,19 +72,19 @@ const Footer = () => {
                         <h2 className="visually-hidden" id="block-bootstrap-footer-menu">Footer menu</h2>
                         <ul className="menu nav">
                             <li>
-                            <Link to="/" data-drupal-link-system-path="<front>" className="is-active">Home</Link>
+                                <Link to="/" data-drupal-link-system-path="<front>" className="is-active">Home</Link>
                             </li>
                             <li>
-                            <Link to="https://www.acegroup.com.my/discover#top">Corporate Video</Link>
+                                <a href="https://www.acegroup.com.my/discover#top">Corporate Video</a>
                             </li>
                             <li>
-                            <Link to="#" data-drupal-link-system-path="node/17">Discover</Link>
+                                <Link to="#" data-drupal-link-system-path="node/17">Discover</Link>
                             </li>
                             <li>
-                            <Link to="/insights" data-drupal-link-system-path="insights">Insights</Link>
+                                <Link to="/insights" data-drupal-link-system-path="insights">Insights</Link>
                             </li>
                             <li>
-                            <Link to="/contact" data-drupal-link-system-path="contact">Contact</Link>
+                                <Link to="/contact" data-drupal-link-system-path="contact">Contact</Link>
                             </li>
                         </ul>
                     </nav>
