@@ -1,7 +1,7 @@
 import React from 'react';
-import GetInTouchBanner from '../shared/GetInTouchBanner/GetInTouchBanner';
-import HeaderContact from '../shared/HeaderContact/HeaderContact';
-import ServicesBanner from '../shared/ServicesBanner/ServicesBanner';
+import GetInTouchBanner from '../../shared/GetInTouchBanner/GetInTouchBanner';
+import HeaderContact from '../../shared/HeaderContact/HeaderContact';
+import ServicesBanner from '../../shared/ServicesBanner/ServicesBanner';
 
 const Credit = () => {
     return (
