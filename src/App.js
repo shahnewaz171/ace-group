@@ -7,7 +7,7 @@ import Contact from './components/Contact/Contact';
 import Corporate from './components/Discover/Corporate/Corporate';
 import Home from "./components/Home/Home";
 import InsightsAll from './components/InsightsAll/InsightsAll';
-import { Corporation } from './components/otherServices';
+import { AcceleratorNetwork, Asiacyberx, Automobile, Corporation, PicturesEntertainment } from './components/otherServices';
 import Footer from './components/shared/Footer/Footer';
 import Navbar from './components/shared/Navbar/Navbar';
 
@@ -29,6 +29,10 @@ function App() {
         <Route path="services/capital-management" element={<CapitalManagement />} />
         <Route path="services/private-equity" element={<PrivateEquity />} />
         <Route path="services/corporation" element={<Corporation />} />
+        <Route path="services/asiacyberx" element={<Asiacyberx />} />
+        <Route path="services/accelerator-network" element={<AcceleratorNetwork />} />
+        <Route path="services/automobile" element={<Automobile />} />
+        <Route path="services/pictures-entertainment" element={<PicturesEntertainment />} />
       </Routes>
       {/* Footer section */}
       <Footer />

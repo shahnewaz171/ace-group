@@ -1008,7 +1008,11 @@ body .getintouch .cta-wrapper {
 .credit .billboard,
 .capital-management .billboard,
 .private-equity .billboard,
-.corporation .billboard {
+.corporation .billboard,
+.asiacyberx .billboard,
+.acceleratorNetwork .billboard,
+.automobile .billboard,
+.picturesEntertainment .billboard {
   margin-bottom: 50px;
 }
 
@@ -1889,6 +1893,22 @@ body .insights .billboard h1 {
   background-image: url('https://www.acegroup.com.my/sites/default/files/2021-01/Contact_32.jpg');
   background-position: center center;
 }
+.asiacyberx .billboard {
+  background-image: url('https://www.acegroup.com.my/sites/default/files/2020-09/1_27.jpg');
+  background-position: center center;
+}
+.acceleratorNetwork .billboard {
+  background-image: url('https://www.acegroup.com.my/sites/default/files/2021-01/Contact_30.jpg');
+  background-position: center center;
+}
+.automobile .billboard {
+  background-image: url('https://www.acegroup.com.my/sites/default/files/2018-03/marketing_billboard-%281%29.jpg');
+  background-position: center center;
+}
+.picturesEntertainment .billboard {
+  background-image: url('https://www.acegroup.com.my/sites/default/files/2021-01/Contact2_25.jpg');
+  background-position: center center;
+}
 
 body
   .navbar
@@ -1939,7 +1959,11 @@ body
   .credit .billboard,
   .capital-management .billboard,
   .private-equity .billboard,
-  .corporation .billboard {
+  .corporation .billboard,
+  .asiacyberx .billboard,
+  .acceleratorNetwork .billboard,
+  .automobile .billboard,
+  .picturesEntertainment .billboard {
     display: none;
   }
 }
@@ -2724,11 +2748,11 @@ a.new-cta.white span::after {
   h3 {
     font-size: 4vw !important;
   }
-  .article,
-  .discover-page,
-  .people-page {
-    font-size: 18px;
-    line-height: 22px;
+  body .article,
+  body .discover-page,
+  body .people-page {
+    font-size: 18px !important;
+    line-height: 22px !important;
   }
   .block-views-blockdiscover-people-block-block-1 .views-field-title h3,
   .block-views-blockdiscover-leadership-team-block-1 .views-field-title h3,

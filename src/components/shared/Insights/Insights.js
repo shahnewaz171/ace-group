@@ -35,7 +35,7 @@ const Insights = () => {
                                             <div className="field-content"><a href="/taxonomy/term/15" hrefLang="en">Pictures Entertainment</a></div>
                                         </div>
                                         <div className="views-field views-field-title">
-                                            <h3 className="field-content"><a href="/insights/former-squash-champion-collaborates-ace-pictures-entertainment-produce-biopic-i-am-nicol-0" hrefLang="en">FORMER SQUASH CHAMPION COLLABORATES WITH ACE PICTURES ENTERTAINMENT TO PRODUCE THE BIOPIC "I AM NICOL DAVID"</a></h3>
+                                            <h3 className="field-content"><a href="#" hrefLang="en">FORMER SQUASH CHAMPION COLLABORATES WITH ACE PICTURES ENTERTAINMENT TO PRODUCE THE BIOPIC "I AM NICOL DAVID"</a></h3>
                                         </div>
                                         <div className="views-field views-field-body">
                                             <div className="field-content">
