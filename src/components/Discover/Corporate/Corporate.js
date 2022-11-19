@@ -72,58 +72,58 @@ const Corporate = () => {
                                                     <div className="layout layout--onecol">
                                                         <div className="layout__region layout__region--content">
                                                             <Slider {...settings}>
-                                                                <div class="paragraph paragraph--type--video-slide paragraph--view-mode--default cursor-grap">
-                                                                    <div class="layout layout--onecol">
-                                                                        <div class="layout__region layout__region--content">
-                                                                            <div class="field field--name-field-thumbnail field--type-image field--label-hidden field--item">
-                                                                                <img src="https://www.acegroup.com.my/sites/default/files/2021-01/Contact2_40.jpg" width="2045" height="1333" alt="" typeof="foaf:Image" class="img-fluid" />
-                                                                                <span class="video-embed-open-slider"></span>
+                                                                <div className="paragraph paragraph--type--video-slide paragraph--view-mode--default cursor-grap">
+                                                                    <div className="layout layout--onecol">
+                                                                        <div className="layout__region layout__region--content">
+                                                                            <div className="field field--name-field-thumbnail field--type-image field--label-hidden field--item">
+                                                                                <img src="https://www.acegroup.com.my/sites/default/files/2021-01/Contact2_40.jpg" width="2045" height="1333" alt="" typeof="foaf:Image" className="img-fluid" />
+                                                                                <span className="video-embed-open-slider"></span>
                                                                             </div>
-                                                                            <div class="field field--name-field-title field--type-string field--label-hidden field--item">
+                                                                            <div className="field field--name-field-title field--type-string field--label-hidden field--item">
                                                                                 Discover
                                                                             </div>
-                                                                            <div class="field field--name-field-description field--type-string field--label-hidden field--item">
+                                                                            <div className="field field--name-field-description field--type-string field--label-hidden field--item">
                                                                                 ACE Group Inspirational Short Series (1)
                                                                             </div>
-                                                                            <div class="field field--name-field-video-link field--type-string field--label-hidden field--item">
+                                                                            <div className="field field--name-field-video-link field--type-string field--label-hidden field--item">
                                                                                 https://youtu.be/MYOtphCIHvk
                                                                             </div>
                                                                         </div>
                                                                     </div>
                                                                 </div>
-                                                                <div class="paragraph paragraph--type--video-slide paragraph--view-mode--default cursor-grap">
-                                                                    <div class="layout layout--onecol">
-                                                                        <div class="layout__region layout__region--content">
-                                                                            <div class="field field--name-field-thumbnail field--type-image field--label-hidden field--item">
-                                                                                <img src="https://www.acegroup.com.my/sites/default/files/2021-03/web.jpg" width="2045" height="1333" alt="" typeof="foaf:Image" class="img-fluid" />
-                                                                                <span class="video-embed-open-slider"></span>
+                                                                <div className="paragraph paragraph--type--video-slide paragraph--view-mode--default cursor-grap">
+                                                                    <div className="layout layout--onecol">
+                                                                        <div className="layout__region layout__region--content">
+                                                                            <div className="field field--name-field-thumbnail field--type-image field--label-hidden field--item">
+                                                                                <img src="https://www.acegroup.com.my/sites/default/files/2021-03/web.jpg" width="2045" height="1333" alt="" typeof="foaf:Image" className="img-fluid" />
+                                                                                <span className="video-embed-open-slider"></span>
                                                                             </div>
-                                                                            <div class="field field--name-field-title field--type-string field--label-hidden field--item">
+                                                                            <div className="field field--name-field-title field--type-string field--label-hidden field--item">
                                                                                 Discover
                                                                             </div>
-                                                                            <div class="field field--name-field-description field--type-string field--label-hidden field--item">
+                                                                            <div className="field field--name-field-description field--type-string field--label-hidden field--item">
                                                                                 ACE Group Inspirational Short Series (2)
                                                                             </div>
-                                                                            <div class="field field--name-field-video-link field--type-string field--label-hidden field--item">
+                                                                            <div className="field field--name-field-video-link field--type-string field--label-hidden field--item">
                                                                                 https://youtu.be/3Z5d1VOzvik
                                                                             </div>
                                                                         </div>
                                                                     </div>
                                                                 </div>
-                                                                <div class="paragraph paragraph--type--video-slide paragraph--view-mode--default cursor-grap">
-                                                                    <div class="layout layout--onecol">
-                                                                        <div class="layout__region layout__region--content">
-                                                                            <div class="field field--name-field-thumbnail field--type-image field--label-hidden field--item">
-                                                                                <img src="https://www.acegroup.com.my/sites/default/files/2021-07/1_0.jpg" width="2045" height="1333" alt="" typeof="foaf:Image" class="img-fluid" />
-                                                                                <span class="video-embed-open-slider"></span>
+                                                                <div className="paragraph paragraph--type--video-slide paragraph--view-mode--default cursor-grap">
+                                                                    <div className="layout layout--onecol">
+                                                                        <div className="layout__region layout__region--content">
+                                                                            <div className="field field--name-field-thumbnail field--type-image field--label-hidden field--item">
+                                                                                <img src="https://www.acegroup.com.my/sites/default/files/2021-07/1_0.jpg" width="2045" height="1333" alt="" typeof="foaf:Image" className="img-fluid" />
+                                                                                <span className="video-embed-open-slider"></span>
                                                                             </div>
-                                                                            <div class="field field--name-field-title field--type-string field--label-hidden field--item">
+                                                                            <div className="field field--name-field-title field--type-string field--label-hidden field--item">
                                                                                 Discover
                                                                             </div>
-                                                                            <div class="field field--name-field-description field--type-string field--label-hidden field--item">
+                                                                            <div className="field field--name-field-description field--type-string field--label-hidden field--item">
                                                                                 ACE Group Inspirational Short Series (3)
                                                                             </div>
-                                                                            <div class="field field--name-field-video-link field--type-string field--label-hidden field--item">
+                                                                            <div className="field field--name-field-video-link field--type-string field--label-hidden field--item">
                                                                                 https://youtu.be/tlpOpffNnxI
                                                                             </div>
                                                                         </div>
@@ -197,12 +197,12 @@ const Corporate = () => {
                     </section>
 
                     {/* our peoples */}
-                    <section class="views-element-container block block-views block-views-blockdiscover-leadership-team-block-1 clearfix">
-                        <div class="form-group">
-                            <div class="container padtop5rem padbot5rem related-people view view-discover-leadership-team view-id-discover_leadership_team view-display-id-block_1">
-                                <div class="view-header">
-                                    <div class="text-center">
-                                        <h2 class="article title mob-emphasize">OUR PEOPLE</h2>
+                    <section className="views-element-container block block-views block-views-blockdiscover-leadership-team-block-1 clearfix">
+                        <div className="form-group">
+                            <div className="container padtop5rem padbot5rem related-people view view-discover-leadership-team view-id-discover_leadership_team view-display-id-block_1">
+                                <div className="view-header">
+                                    <div className="text-center">
+                                        <h2 className="article title mob-emphasize">OUR PEOPLE</h2>
                                     </div>
                                 </div>
                                 <PeopleCard />
