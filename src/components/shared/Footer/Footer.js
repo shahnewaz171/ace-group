@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { scrollToTop } from '../customMethod/scrollToTop';
 import './Footer.css';
 
 const Footer = () => {
@@ -11,7 +12,7 @@ const Footer = () => {
                         <div className="layout layout--onecol">
                             <div className="layout__region layout__region--content">
                             <div className="field field--name-body field--type-text-with-summary field--label-hidden field--item">
-                                <p><Link to="/"><img alt="logo" data-entity-type="file" height="55" src="https://www.acegroup.com.my/sites/default/files/inline-images/logo-acegroup.png" width="225" /></Link></p>
+                                <p><Link to="/" onClick={scrollToTop}><img alt="logo" data-entity-type="file" height="55" src="https://www.acegroup.com.my/sites/default/files/inline-images/logo-acegroup.png" width="225" /></Link></p>
                                 <p>© 2021 ACE Group.<br />
                                     All rights reserved.
                                 </p>
@@ -23,25 +24,25 @@ const Footer = () => {
                         <h2 id="block-footerbankingfinance-menu">Banking &amp; Finance</h2>
                         <ul className="menu nav">
                             <li>
-                            <Link to="/services/investment-bank" data-drupal-link-system-path="node/9">Investment Bank</Link>
+                            <Link to="/services/investment-bank" onClick={scrollToTop}>Investment Bank</Link>
                             </li>
                             <li>
-                            <Link to="/services/holdings" data-drupal-link-system-path="node/7">Holdings</Link>
+                            <Link to="/services/holdings" onClick={scrollToTop}>Holdings</Link>
                             </li>
                             <li>
-                            <Link to="/services/money-exchange" data-drupal-link-system-path="node/221">Money Exchange</Link>
+                            <Link to="/services/money-exchange" onClick={scrollToTop}>Money Exchange</Link>
                             </li>
                             <li>
-                            <Link to="/services/leasing" data-drupal-link-system-path="node/10">Leasing</Link>
+                            <Link to="/services/leasing" onClick={scrollToTop}>Leasing</Link>
                             </li>
                             <li>
-                            <Link to="/services/credit" data-drupal-link-system-path="node/11">Credit</Link>
+                            <Link to="/services/credit" onClick={scrollToTop}>Credit</Link>
                             </li>
                             <li>
-                            <Link to="/services/capital-management" data-drupal-link-system-path="node/13">Capital Management</Link>
+                            <Link to="/services/capital-management" onClick={scrollToTop}>Capital Management</Link>
                             </li>
                             <li>
-                            <Link to="/services/private-equity" data-drupal-link-system-path="node/36">Private Equity </Link>
+                            <Link to="/services/private-equity" onClick={scrollToTop}>Private Equity </Link>
                             </li>
                         </ul>
                     </nav>
@@ -49,22 +50,22 @@ const Footer = () => {
                         <h2 id="block-footerothersolutions-menu">Other Services</h2>
                         <ul className="menu nav">
                             <li>
-                            <Link to="/services/corporation" data-drupal-link-system-path="node/12">Corporation</Link>
+                            <Link to="/services/corporation" onClick={scrollToTop}>Corporation</Link>
                             </li>
                             <li>
-                            <Link to="/services/asiacyberx" data-drupal-link-system-path="node/223">AsiacyberX</Link>
+                            <Link to="/services/asiacyberx" onClick={scrollToTop}>AsiacyberX</Link>
                             </li>
                             <li>
-                            <Link to="/services/accelerator-network" data-drupal-link-system-path="node/38">Accelerator Network</Link>
+                            <Link to="/services/accelerator-network" onClick={scrollToTop}>Accelerator Network</Link>
                             </li>
                             <li>
-                            <Link to="/services/automobile" data-drupal-link-system-path="node/39">EzDrive</Link>
+                            <Link to="/services/automobile" onClick={scrollToTop}>EzDrive</Link>
                             </li>
                             <li>
-                            <Link to="/services/pictures-entertainment" data-drupal-link-system-path="node/41">Pictures Entertainment</Link>
+                            <Link to="/services/pictures-entertainment" onClick={scrollToTop}>Pictures Entertainment</Link>
                             </li>
                             <li>
-                                <a href="https://Linkcegroup.com.my/services/advisory">Advisory</a>
+                                <Link to="/services/advisory" onClick={scrollToTop}>Advisory</Link>
                             </li>
                         </ul>
                     </nav>
@@ -72,19 +73,19 @@ const Footer = () => {
                         <h2 className="visually-hidden" id="block-bootstrap-footer-menu">Footer menu</h2>
                         <ul className="menu nav">
                             <li>
-                                <Link to="/" data-drupal-link-system-path="<front>" className="is-active">Home</Link>
+                                <Link to="/" onClick={scrollToTop} className="is-active">Home</Link>
                             </li>
                             <li>
-                                <a href="https://www.acegroup.com.my/discover#top">Corporate Video</a>
+                                <Link to="/discovery" onClick={scrollToTop}>Corporate Video</Link>
                             </li>
                             <li>
-                                <Link to="#" data-drupal-link-system-path="node/17">Discover</Link>
+                                <Link to="/discovery" onClick={scrollToTop}>Discover</Link>
                             </li>
                             <li>
-                                <Link to="/insights" data-drupal-link-system-path="insights">Insights</Link>
+                                <Link to="/insights" onClick={scrollToTop}>Insights</Link>
                             </li>
                             <li>
-                                <Link to="/contact" data-drupal-link-system-path="contact">Contact</Link>
+                                <Link to="/contact" onClick={scrollToTop}>Contact</Link>
                             </li>
                         </ul>
                     </nav>

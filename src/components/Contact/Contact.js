@@ -3,6 +3,7 @@ import { FaEnvelope, FaFax } from "react-icons/fa";
 import { GoGlobe } from 'react-icons/go';
 import { IoIosPhonePortrait } from "react-icons/io";
 import { Link } from 'react-router-dom';
+import { scrollToTop } from '../shared/customMethod/scrollToTop';
 import GetInTouchBanner from '../shared/GetInTouchBanner/GetInTouchBanner';
 
 const Contact = () => {
@@ -130,7 +131,7 @@ const Contact = () => {
                                                 <dt>
                                                     <GoGlobe />
                                                 </dt>
-                                                <dd><Link to="/">www.test.com</Link></dd>
+                                                <dd><Link to="/" onClick={scrollToTop}>www.test.com</Link></dd>
                                                 </dl>
                                             </div>
                                             <div className="col-sm-7 card1 description">

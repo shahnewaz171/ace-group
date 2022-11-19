@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { scrollToTop } from '../customMethod/scrollToTop';
 
 const Insights = () => {
 
@@ -11,7 +12,7 @@ const Insights = () => {
                         <div className="view-header">
                             <h2 className="article title">Insights</h2>
                             <div className="cta-wrapper">
-                                <Link to="/insights" className="new-cta emphasize"><span>VIEW ALL</span></Link>
+                                <Link to="/insights" className="new-cta emphasize" onClick={scrollToTop}><span>VIEW ALL</span></Link>
                             </div>
                         </div>
                         <div className="view-content">
@@ -19,24 +20,24 @@ const Insights = () => {
                                 <ul>
                                     <li>
                                         <div className="views-field views-field-field-insight-category">
-                                            <div className="field-content"><Link to="/taxonomy/term/15" hrefLang="en">Pictures Entertainment</Link></div>
+                                            <div className="field-content"><Link to="/taxonomy/term/15" onClick={scrollToTop}>Pictures Entertainment</Link></div>
                                         </div>
                                         <div className="views-field views-field-title">
-                                            <h3 className="field-content"><Link to="/insights/ace-pictures-bags-coveted-world-media-festival-award" hrefLang="en">ACE PICTURES BAGS COVETED WORLD MEDIA FESTIVAL AWARD</Link></h3>
+                                            <h3 className="field-content"><Link to="/insights/ace-pictures-bags-coveted-world-media-festival-award" onClick={scrollToTop}>ACE PICTURES BAGS COVETED WORLD MEDIA FESTIVAL AWARD</Link></h3>
                                         </div>
                                         <div className="views-field views-field-body">
                                             <div className="field-content">
                                             <p>INSPIRED by true events, the first inspirational short series by ACE Pictures - a subsidiary of ACE Holdings Berhad – follows the story o</p>
                                             </div>
                                         </div>
-                                        <div className="views-field views-field-view-node"><span className="field-content"><Link to="/insights/ace-pictures-bags-coveted-world-media-festival-award" className="new-cta"><span>READ MORE</span></Link></span></div>
+                                        <div className="views-field views-field-view-node"><span className="field-content"><Link to="/insights/ace-pictures-bags-coveted-world-media-festival-award" onClick={scrollToTop}className="new-cta"><span>READ MORE</span></Link></span></div>
                                     </li>
                                     <li>
                                         <div className="views-field views-field-field-insight-category">
-                                            <div className="field-content"><Link to="/taxonomy/term/15" hrefLang="en">Pictures Entertainment</Link></div>
+                                            <div className="field-content"><Link to="/taxonomy/term/15" onClick={scrollToTop}>Pictures Entertainment</Link></div>
                                         </div>
                                         <div className="views-field views-field-title">
-                                            <h3 className="field-content"><Link to="#" hrefLang="en">FORMER SQUASH CHAMPION COLLABORATES WITH ACE PICTURES ENTERTAINMENT TO PRODUCE THE BIOPIC "I AM NICOL DAVID"</Link></h3>
+                                            <h3 className="field-content"><Link to="#" onClick={scrollToTop}>FORMER SQUASH CHAMPION COLLABORATES WITH ACE PICTURES ENTERTAINMENT TO PRODUCE THE BIOPIC "I AM NICOL DAVID"</Link></h3>
                                         </div>
                                         <div className="views-field views-field-body">
                                             <div className="field-content">
@@ -47,17 +48,17 @@ const Insights = () => {
                                     </li>
                                     <li>
                                         <div className="views-field views-field-field-insight-category">
-                                            <div className="field-content"><Link to="/taxonomy/term/4" hrefLang="en">Holdings</Link></div>
+                                            <div className="field-content"><Link to="/taxonomy/term/4" onClick={scrollToTop}>Holdings</Link></div>
                                         </div>
                                         <div className="views-field views-field-title">
-                                            <h3 className="field-content"><Link to="/insights/announcement-ace-holdings-berhad" hrefLang="en">ANNOUNCEMENT (ACE HOLDINGS BERHAD)</Link></h3>
+                                            <h3 className="field-content"><Link to="/insights/announcement-ace-holdings-berhad" onClick={scrollToTop}>ANNOUNCEMENT (ACE HOLDINGS BERHAD)</Link></h3>
                                         </div>
                                         <div className="views-field views-field-body">
                                             <div className="field-content">
                                             <p>SCAM ALERT: BEWARE OF INDIVIDUALS IMPERSONATING AS AGENTS/REPRESENTATIVES OF ACE HOLDINGS BERHAD AND ITS SUBSIDIARIES (“ACE GROUP”)</p>
                                             </div>
                                         </div>
-                                        <div className="views-field views-field-view-node"><span className="field-content"><Link to="/insights/announcement-ace-holdings-berhad" className="new-cta"><span>READ MORE</span></Link></span></div>
+                                        <div className="views-field views-field-view-node"><span className="field-content"><Link to="/insights/announcement-ace-holdings-berhad" onClick={scrollToTop} className="new-cta"><span>READ MORE</span></Link></span></div>
                                     </li>
                                 </ul>
                             </div>

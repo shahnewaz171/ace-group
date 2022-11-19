@@ -2,6 +2,7 @@ import { size } from 'lodash';
 import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { HashLink } from 'react-router-hash-link';
+import { scrollToTop } from '../customMethod/scrollToTop';
 
 const Navbar = () => {
     const {pathname} = useLocation();
@@ -37,7 +38,7 @@ const Navbar = () => {
                 <div className='region region-navigation'>
                     <div className="navi-left"> </div>
                     <div className="navi-center">
-                        <Link to="/" className={`logo navbar-btn ${activeList ? 'overlay' : ''}`}>
+                        <Link to="/" onClick={scrollToTop} className={`logo navbar-btn ${activeList ? 'overlay' : ''}`}>
                             {(pathname === '/' || pathname.includes('/contact')) && (
                                 <img src="https://www.acegroup.com.my/sites/default/files/logo-acegroup%402x-white.png" alt="Home" className='home-icon-white' />
                             )}

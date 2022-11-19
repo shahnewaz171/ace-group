@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { scrollToTop } from '../../shared/customMethod/scrollToTop';
 import GetInTouchBanner from '../../shared/GetInTouchBanner/GetInTouchBanner';
 import HeaderContact from '../../shared/HeaderContact/HeaderContact';
 import ServicesBanner from '../../shared/ServicesBanner/ServicesBanner';
@@ -43,7 +44,7 @@ const PicturesEntertainment = () => {
                                         <p>Through production of entertainment products with potential for broad acceptance across countries and cultures, ACE Pictures aspires to bring the local filmmaking industry to the regional, and eventually the world-stage.</p>
                                         <p>
                                             Visit&nbsp;
-                                            <Link to="/">
+                                            <Link to="/" onClick={scrollToTop}>
                                                 <strong className='fw-bold'>ACE Pictures Entertainment</strong>
                                             </Link>
                                         </p>

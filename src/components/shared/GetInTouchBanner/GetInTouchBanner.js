@@ -17,7 +17,7 @@ const GetInTouchBanner = () => {
                                     {(() => {
                                         if(pathname !== '/contact'){
                                             return (
-                                                <Link className="new-cta white" to="/contact">
+                                                <Link className="new-cta white" to="/contact" onClick={scrollToTop}>
                                                     <span>GET IN TOUCH</span>
                                                 </Link>
                                             )

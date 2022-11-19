@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { scrollToTop } from '../shared/customMethod/scrollToTop';
 import GetInTouchBanner from '../shared/GetInTouchBanner/GetInTouchBanner';
 import HeaderContact from '../shared/HeaderContact/HeaderContact';
 import PeopleCard from '../shared/PeopleCard/PeopleCard';
@@ -47,7 +48,7 @@ const People = () => {
                         <div className="view-header">
                             <h2 className="article title">LEADING EXPERTS</h2>
                             <div className="cta-wrapper">
-                                <Link to="/discovery" className="new-cta emphasize fw-bold"><span>VIEW ALL</span></Link>
+                                <Link to="/discovery" onClick={scrollToTop} className="new-cta emphasize fw-bold"><span>VIEW ALL</span></Link>
                             </div>
                         </div>
                         <PeopleCard />

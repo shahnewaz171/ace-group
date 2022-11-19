@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { scrollToTop } from '../customMethod/scrollToTop';
 import './MainBanner.css';
 
 const MainBanner = () => {
@@ -11,7 +12,7 @@ const MainBanner = () => {
                     <h1 className="title header">TRUST. ABOVE EVERYTHING.</h1>
                     <h2 className="title description">We believe in building relationships first.</h2>
                     <div className="cta-wrapper">
-                        <Link to="/discovery" className="new-cta white shadow"><span>DISCOVER ACE</span></Link>
+                        <Link to="/discovery" onClick={scrollToTop} className="new-cta white shadow"><span>DISCOVER ACE</span></Link>
                     </div>
                 </div>
             </div>
@@ -22,7 +23,7 @@ const MainBanner = () => {
                     <h1 className="title header">TRUST. ABOVE EVERYTHING.</h1>
                     <p className="title description">We believe in building relationships first.</p>
                     <div className="cta-wrapper shadow">
-                        <Link to="/discovery" className="new-cta white shadow"><span>DISCOVER ACE</span></Link>
+                        <Link to="/discovery" onClick={scrollToTop} className="new-cta white shadow"><span>DISCOVER ACE</span></Link>
                     </div>
                 </div>
             </div>
