@@ -12,6 +12,7 @@ import InsightsAll from './components/InsightsAll/InsightsAll';
 import InvestmentBank from './components/InvestmentBank/InvestmentBank';
 import Leasing from './components/Leasing/Leasing';
 import MoneyExchange from './components/MoneyExchange/MoneyExchange';
+import PrivateEquity from './components/PrivateEquity/PrivateEquity';
 import Footer from './components/shared/Footer/Footer';
 import Navbar from './components/shared/Navbar/Navbar';
 
@@ -31,6 +32,7 @@ function App() {
         <Route path="services/leasing" element={<Leasing />} />
         <Route path="services/credit" element={<Credit />} />
         <Route path="services/capital-management" element={<CapitalManagement />} />
+        <Route path="services/private-equity" element={<PrivateEquity />} />
       </Routes>
       {/* Footer section */}
       <Footer />
