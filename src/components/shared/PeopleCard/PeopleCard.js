@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const PeopleCard = () => {
     return (
@@ -8,7 +9,7 @@ const PeopleCard = () => {
                     <div className="card draggable h-100">
                         <div className='views-field views-field-title'></div>
                             <h3 className="card1 title">
-                                <a href="/people/y-bhg-tan-sri-dato-seri-dr-ting-chew-peh" hrefLang="en">YBHG. TAN SRI DATO' SERI DR TING CHEW PEH</a>
+                                <Link to="/people/y-bhg-tan-sri-dato-seri-dr-ting-chew-peh" hrefLang="en">YBHG. TAN SRI DATO' SERI DR TING CHEW PEH</Link>
                             </h3>
                         <div className='views-field views-field-field-billboard-description'>
                             <p className="card1 subtitle">GROUP CHAIRMAN</p>
@@ -19,7 +20,7 @@ const PeopleCard = () => {
                     <div className="card draggable h-100">
                         <div className='views-field views-field-title'>
                             <h3 className="card1 title">
-                                <a href="/people/annie-chang" hrefLang="en">TAN BOON YEE, ALEXIS</a>
+                                <Link to="/people/annie-chang" hrefLang="en">TAN BOON YEE, ALEXIS</Link>
                             </h3>
                         </div>
                         <div className='views-field views-field-field-billboard-description'>
@@ -31,7 +32,7 @@ const PeopleCard = () => {
                     <div className="card draggable h-100">
                         <div className='views-field views-field-title'></div>
                          <h3 className="card1 title">
-                            <a href="/people/y-bhg-tan-sri-dato-seri-dr-ting-chew-peh" hrefLang="en">YBHG. TAN SRI DATO' SERI DR TING CHEW PEH</a>
+                            <Link to="/people/y-bhg-tan-sri-dato-seri-dr-ting-chew-peh" hrefLang="en">YBHG. TAN SRI DATO' SERI DR TING CHEW PEH</Link>
                         </h3>
                         <div className='views-field views-field-field-billboard-description'>
                             <p className="card1 subtitle">GROUP CHAIRMAN</p>
@@ -42,7 +43,7 @@ const PeopleCard = () => {
                     <div className="card draggable h-100">
                         <div className='views-field views-field-title'>
                             <h3 className="card1 title">
-                                <a href="/people/annie-chang" hrefLang="en">TAN BOON YEE, ALEXIS</a>
+                                <Link to="/people/annie-chang" hrefLang="en">TAN BOON YEE, ALEXIS</Link>
                             </h3>
                         </div>
                         <div className='views-field views-field-field-billboard-description'>

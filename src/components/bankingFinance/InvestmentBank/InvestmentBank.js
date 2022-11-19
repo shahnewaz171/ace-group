@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import GetInTouchBanner from '../../shared/GetInTouchBanner/GetInTouchBanner';
 import HeaderContact from '../../shared/HeaderContact/HeaderContact';
 import ServicesBanner from '../../shared/ServicesBanner/ServicesBanner';
@@ -39,9 +40,9 @@ const InvestmentBank = () => {
                                             Relationship.<br/>Above Everything.
                                         </h1>
                                         <h2 className="article title">We do the groundwork so you can reap the benefits.&nbsp;</h2>
-                                        <p>Founded in 2016,<a href="http://aceinvestmentbank.com/"> ACE Investment Bank</a> Limited is licensed by the Labuan Financial Services Authority (Labuan FSA) as an investment banking and investment management firm. ACE Investment Bank provides a whole range of solutions tailored to fulfil the needs of a wide and diversified base of clients, which include corporations, institutional clients as well as high net worth individuals.</p>
+                                        <p>Founded in 2016,<Link to="services/investment-bank"> ACE Investment Bank</Link> Limited is licensed by the Labuan Financial Services Authority (Labuan FSA) as an investment banking and investment management firm. ACE Investment Bank provides a whole range of solutions tailored to fulfil the needs of a wide and diversified base of clients, which include corporations, institutional clients as well as high net worth individuals.</p>
                                         <p>We advise corporations and institutions on a broad spectrum of needs, from formulation of strategic plans, mergers and acquisitions, capital raisings to restructurings. Our expertise in corporate finance and investment banking allow clients to reap financial benefits from our services, and our expansive network opens up venue of new opportunities for them.</p>
-                                        <p>Visit <strong className='fw-bold'><a href="https://aceinvestmentbank.com/">ACE Investment Bank Limited.</a></strong></p>
+                                        <p>Visit <strong className='fw-bold'><Link to="services/investment-bank">ACE Investment Bank Limited.</Link></strong></p>
                                     </div>
                                 </article>
                             </div>

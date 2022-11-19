@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import GetInTouchBanner from '../../shared/GetInTouchBanner/GetInTouchBanner';
 import HeaderContact from '../../shared/HeaderContact/HeaderContact';
 import Insights from '../../shared/Insights/Insights';
@@ -15,7 +16,7 @@ const InsightDetails = () => {
                             <div className="views-row">
                                 <div className="views-field views-field-title insights-header container">
                                     <div className="field-content offset-md-1 col-md-10">
-                                        <span className="insights-info fw-bold"><a href="/index.php/taxonomy/term/15" hrefLang="en">Pictures Entertainment</a>, 30 June 2021</span>
+                                        <span className="insights-info fw-bold"><Link to="/index.php/taxonomy/term/15" hrefLang="en">Pictures Entertainment</Link>, 30 June 2021</span>
                                         <h1>ACE PICTURES BAGS COVETED WORLD MEDIA FESTIVAL AWARD</h1>
                                     </div>
                                 </div>
@@ -37,7 +38,7 @@ const InsightDetails = () => {
                                         <p>While corporate videos tend to be represented in a more rigid and neutral structure in terms of cinematics and narration, ACE Pictures sought to inspire by using storytelling as a key element.</p>
                                         <p>Featuring an eclectic TV commercial crew, a complete in-house post-production team and music by local musicians, the three shorts took 12 days to shoot.</p>
                                         <p>Meanwhile, the other two videos showcase the story of GT race car driver Zen Low and drone-racer Amir Haziq.</p>
-                                        <p>While the former is presently in post-production, the latter has just been released and can now be viewed on [<a href="https://www.youtube.com/channel/UC_9PQGjU2ftfHh49jd2lzZg">ACE Group’s official YouTube channel</a>].</p>
+                                        <p>While the former is presently in post-production, the latter has just been released and can now be viewed on [<Link to="https://www.youtube.com/channel/UC_9PQGjU2ftfHh49jd2lzZg">ACE Group’s official YouTube channel</Link>].</p>
                                         <p>
                                             <img alt="agilan_ace_pictures" src="https://www.acegroup.com.my/sites/default/files/inline-images/1203088.jpg" />
                                         </p>
@@ -57,15 +58,15 @@ const InsightDetails = () => {
                                             It is also keen on going full steam ahead with bringing productions not just from the United States but Hong Kong, South Korea and more back into home ground – once the pandemic situation stabilises – to further boost Malaysian filming industry.
                                         </p>
                                         <p>
-                                            For more information, visit&nbsp;<a href="http://acepictures.com/">acepictures.com</a>
+                                            For more information, visit&nbsp;<Link to="http://Linkcepictures.com/">acepictures.com</Link>
                                         </p>
                                         <p>
                                             View the&nbsp;videos here:&nbsp;
-                                            <a href="https://www.youtube.com/channel/UC_9PQGjU2ftfHh49jd2lzZg">https://www.youtube.com/channel/UC_9PQGjU2ftfHh49jd2lzZg</a>
+                                            <Link to="https://www.youtube.com/channel/UC_9PQGjU2ftfHh49jd2lzZg">https://www.youtube.com/channel/UC_9PQGjU2ftfHh49jd2lzZg</Link>
                                         </p>
                                         <p>
                                             Source:&nbsp;
-                                            <a href="https://www.thestar.com.my/starpicks/2021/06/30/ace-pictures-bags-coveted-world-media-festival-award">https://www.thestar.com.my/starpicks/2021/06/30/ace-pictures-bags-coveted-world-media-festival-award</a>
+                                            <Link to="https://www.thestar.com.my/starpicks/2021/06/30/Linkce-pictures-bags-coveted-world-media-festival-award">https://www.thestar.com.my/starpicks/2021/06/30/Linkce-pictures-bags-coveted-world-media-festival-award</Link>
                                         </p>
                                     </div>
                                 </article>

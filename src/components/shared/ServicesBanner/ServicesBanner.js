@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import Slider from 'react-slick';
 import './ServicesBanner.css';
 
@@ -27,6 +28,8 @@ const ServicesBanner = () => {
             }
         ]
     };
+
+    const scrollToTop = () => window.scrollTo({ top: 0, behavior: "smooth"});
     
     return (
         <>
@@ -44,62 +47,62 @@ const ServicesBanner = () => {
                             <Slider {...settings}>
                                 <div className="views-field views-field-view-node">
                                     <div className="field-content slide-wrapper">
-                                        <a href="/services/leasing" hrefLang="en">
+                                        <Link to="/services/leasing" onClick={scrollToTop}>
                                         <div className="slide-inner">
                                             <img src="https://www.acegroup.com.my/sites/default/files/2020-12/Contact-2_5.jpg" className="img img-fluid" alt='' />
                                         </div>
                                         <h4 className='service-title'>Leasing</h4>
-                                        </a>
+                                        </Link>
                                     </div>
                                 </div>
                                 <div className="views-field views-field-view-node">
                                     <div className="field-content slide-wrapper">
-                                        <a href="/services/private-equity" hrefLang="en">
+                                        <Link to="/services/private-equity" onClick={scrollToTop}>
                                         <div className="slide-inner">
                                             <img src="https://www.acegroup.com.my/sites/default/files/2021-04/Contact2_13.jpg" className="img img-fluid"  alt='' />  
                                         </div>
                                         <h4 className='service-title'>Private Equity</h4>
-                                        </a>
+                                        </Link>
                                     </div>
                                 </div>
                                 <div className="views-field views-field-view-node">
                                     <div className="field-content slide-wrapper">
-                                        <a href="/services/investment-bank" hrefLang="en">
+                                        <Link to="/services/investment-bank" onClick={scrollToTop}>
                                         <div className="slide-inner">
                                             <img src="https://www.acegroup.com.my/sites/default/files/2021-01/Contact2_0.jpg" className="img img-fluid" alt='' />   
                                         </div>
                                         <h4 className='service-title'>Investment Bank</h4>
-                                        </a>
+                                        </Link>
                                     </div>
                                 </div>
                                 <div className="views-field views-field-view-node">
                                     <div className="field-content slide-wrapper">
-                                        <a href="/services/capital-management" hrefLang="en">
+                                        <Link to="/services/capital-management" onClick={scrollToTop}>
                                         <div className="slide-inner">
                                             <img src="https://www.acegroup.com.my/sites/default/files/2021-04/Contact2_14.jpg" className="img img-fluid" alt='' />  
                                         </div>
                                         <h4 className='service-title'>Capital Management</h4>
-                                        </a>
+                                        </Link>
                                     </div>
                                 </div>
                                 <div className="views-field views-field-view-node">
                                     <div className="field-content slide-wrapper">
-                                        <a href="/services/money-exchange" hrefLang="en">
+                                        <Link to="/services/money-exchange" onClick={scrollToTop}>
                                         <div className="slide-inner">
                                             <img src="https://www.acegroup.com.my/sites/default/files/2021-01/Contact2_4.jpg" className="img img-fluid" alt='' />   
                                         </div>
                                         <h4 className='service-title'>Money Exchange </h4>
-                                        </a>
+                                        </Link>
                                     </div>
                                 </div>
                                 <div className="views-field views-field-view-node">
                                     <div className="field-content slide-wrapper">
-                                        <a href="/services/credit" hrefLang="en">
+                                        <Link to="/services/credit" onClick={scrollToTop}>
                                         <div className="slide-inner">
                                             <img src="https://www.acegroup.com.my/sites/default/files/2021-04/Contact2_5.jpg" className="img img-fluid" alt='' /> 
                                         </div>
                                         <h4 className='service-title'>Credit</h4>
-                                        </a>
+                                        </Link>
                                     </div>
                                 </div>
                             </Slider>

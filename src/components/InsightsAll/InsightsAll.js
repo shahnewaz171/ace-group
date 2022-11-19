@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const InsightsAll = () => {
     
@@ -23,10 +24,10 @@ const InsightsAll = () => {
                                 <ul>
                                     <li>
                                         <div className="views-field views-field-field-insight-category">
-                                        <div className="field-content"><a href="/taxonomy/term/15" hrefLang="en">Pictures Entertainment</a></div>
+                                        <div className="field-content"><Link to="/taxonomy/term/15" hrefLang="en">Pictures Entertainment</Link></div>
                                         </div>
                                         <div className="views-field views-field-title">
-                                        <h3 className="field-content"><a href="/insights/m-magic-director-alexis-manya-spraic-talks-preserving-magic-castles-legacy-during-shutdown" hrefLang="en">M FOR MAGIC DIRECTOR ALEXIS MANYA SPRAIC TALKS PRESERVING MAGIC CASTLE’S LEGACY DURING SHUTDOWN</a></h3>
+                                        <h3 className="field-content"><Link to="/insights/m-magic-director-alexis-manya-spraic-talks-preserving-magic-castles-legacy-during-shutdown" hrefLang="en">M FOR MAGIC DIRECTOR ALEXIS MANYA SPRAIC TALKS PRESERVING MAGIC CASTLE’S LEGACY DURING SHUTDOWN</Link></h3>
                                         </div>
                                         <div className="views-field views-field-body">
                                         <div className="field-content">
@@ -36,10 +37,10 @@ const InsightsAll = () => {
                                     </li>
                                     <li>
                                         <div className="views-field views-field-field-insight-category">
-                                        <div className="field-content"><a href="/taxonomy/term/15" hrefLang="en">Pictures Entertainment</a></div>
+                                        <div className="field-content"><Link to="/taxonomy/term/15" hrefLang="en">Pictures Entertainment</Link></div>
                                         </div>
                                         <div className="views-field views-field-title">
-                                        <h3 className="field-content"><a href="/insights/neil-patrick-harris-helps-explore-history-awe-inspiring-magic-castle-m-magic-documentary" hrefLang="en">Neil Patrick Harris helps explore the history of the awe-inspiring Magic Castle in ‘M For Magic’ documentary</a></h3>
+                                        <h3 className="field-content"><Link to="/insights/neil-patrick-harris-helps-explore-history-awe-inspiring-magic-castle-m-magic-documentary" hrefLang="en">Neil Patrick Harris helps explore the history of the awe-inspiring Magic Castle in ‘M For Magic’ documentary</Link></h3>
                                         </div>
                                         <div className="views-field views-field-body">
                                         <div className="field-content">
@@ -49,10 +50,10 @@ const InsightsAll = () => {
                                     </li>
                                     <li>
                                         <div className="views-field views-field-field-insight-category">
-                                        <div className="field-content"><a href="/taxonomy/term/17" hrefLang="en">Ace Accelerator</a></div>
+                                        <div className="field-content"><Link to="/taxonomy/term/17" hrefLang="en">Ace Accelerator</Link></div>
                                         </div>
                                         <div className="views-field views-field-title">
-                                        <h3 className="field-content"><a href="/insights/cloud-security-alliance-and-asia-cybersecurity-exchange-renew-memorandum-intent" hrefLang="en">CLOUD SECURITY ALLIANCE AND ASIA CYBERSECURITY EXCHANGE RENEW MEMORANDUM OF INTENT</a></h3>
+                                        <h3 className="field-content"><Link to="/insights/cloud-security-alliance-and-asia-cybersecurity-exchange-renew-memorandum-intent" hrefLang="en">CLOUD SECURITY ALLIANCE AND ASIA CYBERSECURITY EXCHANGE RENEW MEMORANDUM OF INTENT</Link></h3>
                                         </div>
                                         <div className="views-field views-field-body">
                                         <div className="field-content">
@@ -62,10 +63,10 @@ const InsightsAll = () => {
                                     </li>
                                     <li>
                                         <div className="views-field views-field-field-insight-category">
-                                        <div className="field-content"><a href="/taxonomy/term/17" hrefLang="en">Ace Accelerator</a></div>
+                                        <div className="field-content"><Link to="/taxonomy/term/17" hrefLang="en">Ace Accelerator</Link></div>
                                         </div>
                                         <div className="views-field views-field-title">
-                                        <h3 className="field-content"><a href="/insights/preparing-cyber-risk-assessment-new-normal-asiacyberx" hrefLang="en">Preparing for cyber risk assessment is the new normal - ASIACYBERX</a></h3>
+                                        <h3 className="field-content"><Link to="/insights/preparing-cyber-risk-assessment-new-normal-asiacyberx" hrefLang="en">Preparing for cyber risk assessment is the new normal - ASIACYBERX</Link></h3>
                                         </div>
                                         <div className="views-field views-field-body">
                                         <div className="field-content">
@@ -75,10 +76,10 @@ const InsightsAll = () => {
                                     </li>
                                     <li>
                                         <div className="views-field views-field-field-insight-category">
-                                        <div className="field-content"><a href="/taxonomy/term/15" hrefLang="en">Pictures Entertainment</a></div>
+                                        <div className="field-content"><Link to="/taxonomy/term/15" hrefLang="en">Pictures Entertainment</Link></div>
                                         </div>
                                         <div className="views-field views-field-title">
-                                        <h3 className="field-content"><a href="/insights/gravitas-picks-sundance-drama-blush-starring-wendi-mclendon-covey" hrefLang="en">GRAVITAS PICKS UP SUNDANCE DRAMA ‘BLUSH’ STARRING WENDI MCLENDON-COVEY</a></h3>
+                                        <h3 className="field-content"><Link to="/insights/gravitas-picks-sundance-drama-blush-starring-wendi-mclendon-covey" hrefLang="en">GRAVITAS PICKS UP SUNDANCE DRAMA ‘BLUSH’ STARRING WENDI MCLENDON-COVEY</Link></h3>
                                         </div>
                                         <div className="views-field views-field-body">
                                         <div className="field-content">
@@ -88,10 +89,10 @@ const InsightsAll = () => {
                                     </li>
                                     <li>
                                         <div className="views-field views-field-field-insight-category">
-                                        <div className="field-content"><a href="/taxonomy/term/15" hrefLang="en">Pictures Entertainment</a></div>
+                                        <div className="field-content"><Link to="/taxonomy/term/15" hrefLang="en">Pictures Entertainment</Link></div>
                                         </div>
                                         <div className="views-field views-field-title">
-                                        <h3 className="field-content"><a href="/insights/color-out-space-lands-blu-ray-next-month" hrefLang="en">COLOR OUT OF SPACE LANDS ON BLU-RAY NEXT MONTH</a></h3>
+                                        <h3 className="field-content"><Link to="/insights/color-out-space-lands-blu-ray-next-month" hrefLang="en">COLOR OUT OF SPACE LANDS ON BLU-RAY NEXT MONTH</Link></h3>
                                         </div>
                                         <div className="views-field views-field-body">
                                         <div className="field-content">
@@ -101,10 +102,10 @@ const InsightsAll = () => {
                                     </li>
                                     <li>
                                         <div className="views-field views-field-field-insight-category">
-                                        <div className="field-content"><a href="/taxonomy/term/14" hrefLang="en">Media Network</a></div>
+                                        <div className="field-content"><Link to="/taxonomy/term/14" hrefLang="en">Media Network</Link></div>
                                         </div>
                                         <div className="views-field views-field-title">
-                                        <h3 className="field-content"><a href="/insights/engaging-power-influencers" hrefLang="en">ENGAGING THE POWER OF INFLUENCERS</a></h3>
+                                        <h3 className="field-content"><Link to="/insights/engaging-power-influencers" hrefLang="en">ENGAGING THE POWER OF INFLUENCERS</Link></h3>
                                         </div>
                                         <div className="views-field views-field-body">
                                         <div className="field-content">
@@ -114,10 +115,10 @@ const InsightsAll = () => {
                                     </li>
                                     <li>
                                         <div className="views-field views-field-field-insight-category">
-                                        <div className="field-content"><a href="/taxonomy/term/15" hrefLang="en">Pictures Entertainment</a></div>
+                                        <div className="field-content"><Link to="/taxonomy/term/15" hrefLang="en">Pictures Entertainment</Link></div>
                                         </div>
                                         <div className="views-field views-field-title">
-                                        <h3 className="field-content"><a href="/insights/nicolas-cage-sci-fi-horror-color-out-space-opens-last-full-measure-and-panga-debut" hrefLang="en">NICOLAS CAGE SCI-FI HORROR 'COLOR OUT OF SPACE' OPENS, 'THE LAST FULL MEASURE' AND 'PANGA' DEBUT – SPECIALTY B.O. PREVIEW</a></h3>
+                                        <h3 className="field-content"><Link to="/insights/nicolas-cage-sci-fi-horror-color-out-space-opens-last-full-measure-and-panga-debut" hrefLang="en">NICOLAS CAGE SCI-FI HORROR 'COLOR OUT OF SPACE' OPENS, 'THE LAST FULL MEASURE' AND 'PANGA' DEBUT – SPECIALTY B.O. PREVIEW</Link></h3>
                                         </div>
                                         <div className="views-field views-field-body">
                                         <div className="field-content">
@@ -127,10 +128,10 @@ const InsightsAll = () => {
                                     </li>
                                     <li>
                                         <div className="views-field views-field-field-insight-category">
-                                        <div className="field-content"><a href="/taxonomy/term/15" hrefLang="en">Pictures Entertainment</a></div>
+                                        <div className="field-content"><Link to="/taxonomy/term/15" hrefLang="en">Pictures Entertainment</Link></div>
                                         </div>
                                         <div className="views-field views-field-title">
-                                        <h3 className="field-content"><a href="/insights/color-out-space-set-richard-stanleys-wild-comeback-film-nicolas-cage" hrefLang="en">COLOR OUT OF SPACE: ON THE SET OF RICHARD STANLEY'S WILD COMEBACK FILM WITH NICOLAS CAGE</a></h3>
+                                        <h3 className="field-content"><Link to="/insights/color-out-space-set-richard-stanleys-wild-comeback-film-nicolas-cage" hrefLang="en">COLOR OUT OF SPACE: ON THE SET OF RICHARD STANLEY'S WILD COMEBACK FILM WITH NICOLAS CAGE</Link></h3>
                                         </div>
                                         <div className="views-field views-field-body">
                                         <div className="field-content">

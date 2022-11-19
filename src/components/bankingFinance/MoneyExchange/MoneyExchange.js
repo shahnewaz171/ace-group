@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import GetInTouchBanner from '../../shared/GetInTouchBanner/GetInTouchBanner';
 import HeaderContact from '../../shared/HeaderContact/HeaderContact';
 import ServicesBanner from '../../shared/ServicesBanner/ServicesBanner';
@@ -44,7 +45,7 @@ const MoneyExchange = () => {
                                         <p>ACE Money Exchange take security very seriously and are committed to implementing security measures used by major leading banks worldwide to help protect and safeguard every transaction, as&nbsp;well as the privacy of their&nbsp;customers.</p>
                                         <p>A happy customer is their goal. Their friendly Customer Service team is always ready to provide the best service and support, consistently improving policies and processes, as they aim to deliver excellence every time. With the best exchange rates, most secure transaction, and superb customer service, ACE Money Exchange promises to deliver a complete money exchange experience like no other.&nbsp;</p>
                                         <p>
-                                            Visit <strong className='fw-bold'><a href="https://www.acemoneyexchange.com.my/">ACE&nbsp;Money Exchange</a></strong>
+                                            Visit <strong className='fw-bold'><Link to="/services/money-exchange">ACE&nbsp;Money Exchange</Link></strong>
                                         </p>
                                         <p>&nbsp;</p>
                                     </div>

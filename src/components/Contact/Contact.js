@@ -2,6 +2,7 @@ import React from 'react';
 import { FaEnvelope, FaFax } from "react-icons/fa";
 import { GoGlobe } from 'react-icons/go';
 import { IoIosPhonePortrait } from "react-icons/io";
+import { Link } from 'react-router-dom';
 import GetInTouchBanner from '../shared/GetInTouchBanner/GetInTouchBanner';
 
 const Contact = () => {
@@ -125,11 +126,11 @@ const Contact = () => {
                                                 <dt>
                                                     <FaEnvelope />
                                                 </dt>
-                                                <dd><a href="mailto:info@acegroup.com.my">info@acegroup.com.my</a></dd>
+                                                <dd><a href="mailto:info@test.com">info@test.com</a></dd>
                                                 <dt>
                                                     <GoGlobe />
                                                 </dt>
-                                                <dd><a href="www.acegroup.com.my">www.acegroup.com.my</a></dd>
+                                                <dd><Link to="/">www.test.com</Link></dd>
                                                 </dl>
                                             </div>
                                             <div className="col-sm-7 card1 description">

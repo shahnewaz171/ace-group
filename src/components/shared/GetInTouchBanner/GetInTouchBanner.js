@@ -17,9 +17,9 @@ const GetInTouchBanner = () => {
                                     {(() => {
                                         if(pathname !== 'contact'){
                                             return (
-                                                <a className="new-cta white" href="/contact">
+                                                <Link className="new-cta white" to="/contact">
                                                     <span>GET IN TOUCH</span>
-                                                </a>
+                                                </Link>
                                             )
 
                                         }
