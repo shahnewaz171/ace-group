@@ -31,7 +31,7 @@ const MoneyExchange = () => {
                                     </span>
                                 </div>
 
-                                {/* investment info */}
+                                {/* MoneyExchange info */}
                                 <article className="views-field views-field-body container article">
                                     <div className="field-content offset-md-1 col-md-10 padbot9rem padtop9rem">
                                         <h2 className="d-lg-none text-center">Money Exchange</h2>

@@ -1003,7 +1003,8 @@ body .getintouch .cta-wrapper {
 }
 .investment .slick-slider,
 .holdings .slick-slider,
-.moneyExchange .slick-slider {
+.moneyExchange .slick-slider,
+.leasing .billboard {
   margin-bottom: 50px;
 }
 
@@ -1864,6 +1865,10 @@ body .insights .billboard h1 {
   background-image: url('https://www.acegroup.com.my/sites/default/files/2021-01/Contact_11.jpg');
   background-position: center center;
 }
+.leasing .billboard{
+  background-image: url('https://www.acegroup.com.my/sites/default/files/2021-01/Contact_12.jpg');
+  background-position: center center;
+}
 
 body
   .navbar
@@ -1909,7 +1914,8 @@ body
   }
   .investment .billboard,
   .holdings .billboard,
-  .moneyExchange .billboard {
+  .moneyExchange .billboard,
+  .leasing .billboard {
     display: none;
   }
 }
@@ -2758,6 +2764,9 @@ a.new-cta.white span::after {
     background-size: contain;
     margin: 1px 0;
   }
+}
+.form-group:last-child, .panel:last-child, .popover ol:last-child, .popover ul:last-child, p:last-child{
+  margin-bottom: 0px;
 }
 
 /* visible utilities */
