@@ -10,6 +10,7 @@ import InsightsAll from './components/InsightsAll/InsightsAll';
 import { AcceleratorNetwork, Asiacyberx, Automobile, Corporation, PicturesEntertainment } from './components/otherServices';
 import Footer from './components/shared/Footer/Footer';
 import Navbar from './components/shared/Navbar/Navbar';
+import NotFound from './components/shared/NotFound/NotFound';
 
 function App() {
   
@@ -33,6 +34,7 @@ function App() {
         <Route path="services/accelerator-network" element={<AcceleratorNetwork />} />
         <Route path="services/automobile" element={<Automobile />} />
         <Route path="services/pictures-entertainment" element={<PicturesEntertainment />} />
+        <Route path="*" element={<NotFound />} />
       </Routes>
       {/* Footer section */}
       <Footer />
