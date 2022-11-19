@@ -8,7 +8,9 @@
 }
 @font-face {
   font-family: 'Verlag';
-  src: url('./fonts/Verlag-Light.ttf');
+  src: url('./fonts/Verlag-Light.ttf'),
+      url('./fonts/Verlag-Bold.otf');
+
 }
 @font-face {
   font-family: 'Verlag Black';
@@ -24,6 +26,13 @@ body {
 }
 ul {
   margin-bottom: 10px;
+}
+p {
+  margin: 0 0 10px;
+  margin-bottom: 0px;
+}
+table {
+  --bs-table-accent-bg: none !important;
 }
 body a:hover,
 body a:focus {
@@ -42,6 +51,9 @@ form .form-control {
   padding: 20px;
   box-shadow: none;
   /* font-size: 105%; */
+}
+form input.form-control {
+  height: 34px;
 }
 
 form .form-control.form-select {
@@ -143,6 +155,9 @@ body #navbar-collapse {
   font-size: 15px;
   font-weight: 600;
   letter-spacing: 1px;
+}
+.contact svg {
+  color: #004a7d !important;
 }
 
 .card1.description {
@@ -426,6 +441,9 @@ body a[href='/v2.1/services/investment-management'] {
 @media screen and (max-width: 767px) {
   .navbar-brand {
     display: none;
+  }
+  .service-title {
+    text-align: center;
   }
 }
 
@@ -985,6 +1003,20 @@ body .getintouch .cta-wrapper {
   padding-right: 80px;
   margin-bottom: 50px;
 }
+.investment .slick-slider,
+.holdings .slick-slider,
+.moneyExchange .slick-slider,
+.leasing .billboard,
+.credit .billboard,
+.capital-management .billboard,
+.private-equity .billboard,
+.corporation .billboard,
+.asiacyberx .billboard,
+.acceleratorNetwork .billboard,
+.automobile .billboard,
+.picturesEntertainment .billboard {
+  margin-bottom: 50px;
+}
 
 .discover.leading-experts-slider,
 /* .discover.leading-experts-slider .slide, */
@@ -1282,7 +1314,7 @@ body:not(.user-logged-in) .related-people .draggable {
   background: #fff !important;
   padding: 50px 40px;
   vertical-align: top;
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
 }
 
 body .insights-list li:last-child,
@@ -1339,6 +1371,9 @@ body .insights-list h3,
 body:not(.user-logged-in) .related-people .draggable h3 {
   margin-top: 5px;
   text-transform: uppercase;
+}
+.card {
+  border: none !important;
 }
 
 body .insights-list .views-field-field-insight-category,
@@ -1468,8 +1503,7 @@ body .billboard-mobile {
 
 body #video-embed-open,
 .video-embed-open-slider {
-  /* background: url(../../../sites/default/files/2017-09/icon-youtube-play.png)
-    no-repeat 0 0; */
+  background: url(./images/icon-youtube-play.png) no-repeat 0 0;
   height: 58px;
   width: 82px;
   display: inline-block;
@@ -1508,6 +1542,9 @@ body .video-embed-close {
   text-align: center;
   margin: auto;
 }
+.cursor-grap {
+  cursor: grab !important;
+}
 
 @media screen and (min-width: 900px) {
   /* special huggies for this sensitive boy */
@@ -1520,7 +1557,7 @@ body .discover-page .views-row {
   position: relative;
 }
 
-body .col-md-offset-2.col-md-8 h2 {
+body .offset-md-2.col-md-8 h2 {
   text-align: center;
   margin-bottom: 50px;
 }
@@ -1567,6 +1604,12 @@ body .marbotnone {
   body:not(.user-logged-in) .related-people .draggable {
     margin-right: 10px;
     width: 32%;
+    /* cursor: grab !important; */
+  }
+  .discover .card {
+    margin-right: 0px !important;
+    width: 100% !important;
+    cursor: grab !important;
   }
 
   .insights-list li:nth-child(3n),
@@ -1690,8 +1733,8 @@ body .marbotnone {
     padding-right: 40px;
   }
 
-  .col-md-offset-2.col-md-8.padbot9rem.padtop9rem,
-  .col-md-offset-1.col-md-10.padbot9rem.padtop9rem {
+  .offset-md-2.col-md-8.padbot9rem.padtop9rem,
+  .offset-md-1.col-md-10.padbot9rem.padtop9rem {
     padding-left: 25px;
     padding-right: 25px;
     padding-top: 50px;
@@ -1715,16 +1758,16 @@ body .marbotnone {
     width: 100%;
   }
 
-  .insights-header {
-    padding-top: 120px;
+  body .insights-header {
+    padding-top: 120px !important;
   }
 
-  .insights-header {
+  body .insights-header {
     padding-left: 40px;
     padding-right: 40px;
   }
 
-  .insights-header span {
+  body .insights-header span {
     padding-left: 0;
   }
 
@@ -1757,15 +1800,15 @@ body .marbotnone {
   }
 }
 
-body .col-md-offset-2.col-md-8.padbot9rem.padtop9rem,
-body .col-md-offset-1.col-md-10.padbot9rem.padtop9rem {
+body .offset-md-2.col-md-8.padbot9rem.padtop9rem,
+body .offset-md-1.col-md-10.padbot9rem.padtop9rem {
   padding-top: 50px;
 }
 
-body .col-md-offset-2.col-md-8.padbot9rem.padtop9rem h1,
-body .col-md-offset-1.col-md-10.padbot9rem.padtop9rem h1,
-body .col-md-offset-2.col-md-8.padbot9rem.padtop9rem h2,
-body .col-md-offset-1.col-md-10.padbot9rem.padtop9rem h2 {
+body .offset-md-2.col-md-8.padbot9rem.padtop9rem h1,
+body .offset-md-1.col-md-10.padbot9rem.padtop9rem h1,
+body .offset-md-2.col-md-8.padbot9rem.padtop9rem h2,
+body .offset-md-1.col-md-10.padbot9rem.padtop9rem h2 {
   margin-top: 0;
 }
 
@@ -1808,8 +1851,7 @@ body .insights .billboard h1 {
 }
 .insights .billboard {
   background-color: #ffffff;
-  /* background-image: url(https://acegroup.com.my/v2.1/sites/default/files/billboard-insights.jpg); */
-  /* background-image: url(../../../sites/default/files/billboard-insights.jpg); */
+  background-image: url('https://www.acegroup.com.my/sites/default/files/billboard-insights.jpg');
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: left top;
@@ -1820,6 +1862,54 @@ body .insights .billboard h1 {
   -o-background-size: cover;
 
   margin-bottom: 50px;
+}
+.investment .billboard {
+  background-image: url('https://www.acegroup.com.my/sites/default/files/2021-01/Contact_1.jpg');
+  background-position: center center;
+}
+.holdings .billboard {
+  background-image: url('https://www.acegroup.com.my/sites/default/files/2021-01/Contact_28.jpg');
+  background-position: center center;
+}
+.moneyExchange .billboard {
+  background-image: url('https://www.acegroup.com.my/sites/default/files/2021-01/Contact_11.jpg');
+  background-position: center center;
+}
+.leasing .billboard {
+  background-image: url('https://www.acegroup.com.my/sites/default/files/2021-01/Contact_12.jpg');
+  background-position: center center;
+}
+.credit .billboard {
+  background-image: url('https://www.acegroup.com.my/sites/default/files/2021-04/Contact_3.jpg');
+  background-position: center center;
+}
+.capital-management .billboard {
+  background-image: url('https://www.acegroup.com.my/sites/default/files/2021-04/Contact_11.jpg');
+  background-position: center center;
+}
+.private-equity .billboard {
+  background-image: url('https://www.acegroup.com.my/sites/default/files/2021-04/Contact_10.jpg');
+  background-position: center center;
+}
+.corporation .billboard {
+  background-image: url('https://www.acegroup.com.my/sites/default/files/2021-01/Contact_32.jpg');
+  background-position: center center;
+}
+.asiacyberx .billboard {
+  background-image: url('https://www.acegroup.com.my/sites/default/files/2020-09/1_27.jpg');
+  background-position: center center;
+}
+.acceleratorNetwork .billboard {
+  background-image: url('https://www.acegroup.com.my/sites/default/files/2021-01/Contact_30.jpg');
+  background-position: center center;
+}
+.automobile .billboard {
+  background-image: url('https://www.acegroup.com.my/sites/default/files/2018-03/marketing_billboard-%281%29.jpg');
+  background-position: center center;
+}
+.picturesEntertainment .billboard {
+  background-image: url('https://www.acegroup.com.my/sites/default/files/2021-01/Contact2_25.jpg');
+  background-position: center center;
 }
 
 body
@@ -1863,6 +1953,20 @@ body
     text-align: left;
     padding-bottom: 0;
     color: #004a7d;
+  }
+  .investment .billboard,
+  .holdings .billboard,
+  .moneyExchange .billboard,
+  .leasing .billboard,
+  .credit .billboard,
+  .capital-management .billboard,
+  .private-equity .billboard,
+  .corporation .billboard,
+  .asiacyberx .billboard,
+  .acceleratorNetwork .billboard,
+  .automobile .billboard,
+  .picturesEntertainment .billboard {
+    display: none;
   }
 }
 
@@ -2646,11 +2750,11 @@ a.new-cta.white span::after {
   h3 {
     font-size: 4vw !important;
   }
-  .article,
-  .discover-page,
-  .people-page {
-    font-size: 18px;
-    line-height: 22px;
+  body .article,
+  body .discover-page,
+  body .people-page {
+    font-size: 18px !important;
+    line-height: 22px !important;
   }
   .block-views-blockdiscover-people-block-block-1 .views-field-title h3,
   .block-views-blockdiscover-leadership-team-block-1 .views-field-title h3,
@@ -2711,5 +2815,57 @@ a.new-cta.white span::after {
     margin: 1px 0;
   }
 }
+.form-group:last-child,
+.panel:last-child,
+.popover ol:last-child,
+.popover ul:last-child,
+p:last-child {
+  margin-bottom: 0px;
+}
 
 /* visible utilities */
+/* paginations */
+.pager {
+  padding-left: 0;
+  margin: 20px 0;
+  text-align: center;
+  list-style: none;
+}
+
+body .insights .pager li button {
+  border: none;
+  border-radius: 0;
+  padding: 10px 18px;
+}
+.pager .previous > button,
+.pager .previous > span {
+  float: left;
+}
+.pager .next > button,
+.pager .next > span {
+  float: right;
+}
+.pager .next {
+  margin-left: 4px;
+}
+.pager li > button,
+.pager li > span {
+  display: inline-block;
+  padding: 5px 14px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 15px;
+}
+.pager li > button:hover,
+.pager li > button:focus {
+  text-decoration: none;
+  background-color: #eee;
+}
+.pager .next button span,
+.pager .previous button span {
+  font-family: 'Verlag Book';
+  font-weight: 800;
+}
+.pager-select-bg {
+  background-color: #eee;
+}

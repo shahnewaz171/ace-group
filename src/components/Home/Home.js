@@ -1,17 +1,14 @@
 import React from 'react';
-import Footer from '../Footer/Footer';
-import GetInTouchBanner from '../GetInTouchBanner/GetInTouchBanner';
-import HeaderContact from '../HeaderContact/HeaderContact';
-import Insights from '../Insights/Insights';
-import MainBanner from '../MainBanner/MainBanner';
-import Navbar from '../Navbar/Navbar';
-import ServicesBanner from '../ServicesBanner/ServicesBanner';
+import GetInTouchBanner from '../shared/GetInTouchBanner/GetInTouchBanner';
+import HeaderContact from '../shared/HeaderContact/HeaderContact';
+import Insights from '../shared/Insights/Insights';
+import MainBanner from '../shared/MainBanner/MainBanner';
+import ServicesBanner from '../shared/ServicesBanner/ServicesBanner';
 import './Home.module.css';
 
 const Home = () => {
     return (
        <>
-        <Navbar />
         {/* Main head banner section */}
         <section>
             <div className='home-block view view-home-page view-id-home_page view-display-id-block_1'>
@@ -38,9 +35,6 @@ const Home = () => {
 
         {/* Get in touch */}
         <GetInTouchBanner />
-
-        {/* Footer section */}
-        <Footer />
        </>
     );
 };

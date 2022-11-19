@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Insights = () => {
 
@@ -10,7 +11,7 @@ const Insights = () => {
                         <div className="view-header">
                             <h2 className="article title">Insights</h2>
                             <div className="cta-wrapper">
-                            <a href="/insights" className="new-cta emphasize"><span>VIEW ALL</span></a>
+                                <Link to="/insights" className="new-cta emphasize"><span>VIEW ALL</span></Link>
                             </div>
                         </div>
                         <div className="view-content">
@@ -18,45 +19,45 @@ const Insights = () => {
                                 <ul>
                                     <li>
                                         <div className="views-field views-field-field-insight-category">
-                                            <div className="field-content"><a href="/taxonomy/term/15" hrefLang="en">Pictures Entertainment</a></div>
+                                            <div className="field-content"><Link to="/taxonomy/term/15" hrefLang="en">Pictures Entertainment</Link></div>
                                         </div>
                                         <div className="views-field views-field-title">
-                                            <h3 className="field-content"><a href="/insights/ace-pictures-bags-coveted-world-media-festival-award" hrefLang="en">ACE PICTURES BAGS COVETED WORLD MEDIA FESTIVAL AWARD</a></h3>
+                                            <h3 className="field-content"><Link to="/insights/ace-pictures-bags-coveted-world-media-festival-award" hrefLang="en">ACE PICTURES BAGS COVETED WORLD MEDIA FESTIVAL AWARD</Link></h3>
                                         </div>
                                         <div className="views-field views-field-body">
                                             <div className="field-content">
                                             <p>INSPIRED by true events, the first inspirational short series by ACE Pictures - a subsidiary of ACE Holdings Berhad – follows the story o</p>
                                             </div>
                                         </div>
-                                        <div className="views-field views-field-view-node"><span className="field-content"><a href="/insights/ace-pictures-bags-coveted-world-media-festival-award" className="new-cta"><span>READ MORE</span></a></span></div>
+                                        <div className="views-field views-field-view-node"><span className="field-content"><Link to="/insights/ace-pictures-bags-coveted-world-media-festival-award" className="new-cta"><span>READ MORE</span></Link></span></div>
                                     </li>
                                     <li>
                                         <div className="views-field views-field-field-insight-category">
-                                            <div className="field-content"><a href="/taxonomy/term/15" hrefLang="en">Pictures Entertainment</a></div>
+                                            <div className="field-content"><Link to="/taxonomy/term/15" hrefLang="en">Pictures Entertainment</Link></div>
                                         </div>
                                         <div className="views-field views-field-title">
-                                            <h3 className="field-content"><a href="/insights/former-squash-champion-collaborates-ace-pictures-entertainment-produce-biopic-i-am-nicol-0" hrefLang="en">FORMER SQUASH CHAMPION COLLABORATES WITH ACE PICTURES ENTERTAINMENT TO PRODUCE THE BIOPIC "I AM NICOL DAVID"</a></h3>
+                                            <h3 className="field-content"><Link to="#" hrefLang="en">FORMER SQUASH CHAMPION COLLABORATES WITH ACE PICTURES ENTERTAINMENT TO PRODUCE THE BIOPIC "I AM NICOL DAVID"</Link></h3>
                                         </div>
                                         <div className="views-field views-field-body">
                                             <div className="field-content">
                                             <p>A household name in the world of sports - and throughout the world, there is no one quite as intriguing as the legendary Datuk Nicol Davi</p>
                                             </div>
                                         </div>
-                                        <div className="views-field views-field-view-node"><span className="field-content"><a href="/insights/former-squash-champion-collaborates-ace-pictures-entertainment-produce-biopic-i-am-nicol-0" className="new-cta"><span>READ MORE</span></a></span></div>
+                                        <div className="views-field views-field-view-node"><span className="field-content"><Link to="/insights/former-squash-champion-collaborates-ace-pictures-entertainment-produce-biopic-i-am-nicol-0" className="new-cta"><span>READ MORE</span></Link></span></div>
                                     </li>
                                     <li>
                                         <div className="views-field views-field-field-insight-category">
-                                            <div className="field-content"><a href="/taxonomy/term/4" hrefLang="en">Holdings</a></div>
+                                            <div className="field-content"><Link to="/taxonomy/term/4" hrefLang="en">Holdings</Link></div>
                                         </div>
                                         <div className="views-field views-field-title">
-                                            <h3 className="field-content"><a href="/insights/announcement-ace-holdings-berhad" hrefLang="en">ANNOUNCEMENT (ACE HOLDINGS BERHAD)</a></h3>
+                                            <h3 className="field-content"><Link to="/insights/announcement-ace-holdings-berhad" hrefLang="en">ANNOUNCEMENT (ACE HOLDINGS BERHAD)</Link></h3>
                                         </div>
                                         <div className="views-field views-field-body">
                                             <div className="field-content">
                                             <p>SCAM ALERT: BEWARE OF INDIVIDUALS IMPERSONATING AS AGENTS/REPRESENTATIVES OF ACE HOLDINGS BERHAD AND ITS SUBSIDIARIES (“ACE GROUP”)</p>
                                             </div>
                                         </div>
-                                        <div className="views-field views-field-view-node"><span className="field-content"><a href="/insights/announcement-ace-holdings-berhad" className="new-cta"><span>READ MORE</span></a></span></div>
+                                        <div className="views-field views-field-view-node"><span className="field-content"><Link to="/insights/announcement-ace-holdings-berhad" className="new-cta"><span>READ MORE</span></Link></span></div>
                                     </li>
                                 </ul>
                             </div>
