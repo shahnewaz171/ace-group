@@ -1007,7 +1007,8 @@ body .getintouch .cta-wrapper {
 .leasing .billboard,
 .credit .billboard,
 .capital-management .billboard,
-.private-equity .billboard {
+.private-equity .billboard,
+.corporation .billboard {
   margin-bottom: 50px;
 }
 
@@ -1884,6 +1885,10 @@ body .insights .billboard h1 {
   background-image: url('https://www.acegroup.com.my/sites/default/files/2021-04/Contact_10.jpg');
   background-position: center center;
 }
+.corporation .billboard {
+  background-image: url('https://www.acegroup.com.my/sites/default/files/2021-01/Contact_32.jpg');
+  background-position: center center;
+}
 
 body
   .navbar
@@ -1933,7 +1938,8 @@ body
   .leasing .billboard,
   .credit .billboard,
   .capital-management .billboard,
-  .private-equity .billboard {
+  .private-equity .billboard,
+  .corporation .billboard {
     display: none;
   }
 }
