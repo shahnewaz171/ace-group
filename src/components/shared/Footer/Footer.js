@@ -52,19 +52,19 @@ const Footer = () => {
                             <Link to="/services/corporation" data-drupal-link-system-path="node/12">Corporation</Link>
                             </li>
                             <li>
-                            <Link to="/services/Linksiacyberx" data-drupal-link-system-path="node/223">AsiacyberX</Link>
+                            <Link to="/services/asiacyberx" data-drupal-link-system-path="node/223">AsiacyberX</Link>
                             </li>
                             <li>
-                            <Link to="/services/Linkccelerator-network" data-drupal-link-system-path="node/38">Accelerator Network</Link>
+                            <Link to="/services/accelerator-network" data-drupal-link-system-path="node/38">Accelerator Network</Link>
                             </li>
                             <li>
-                            <Link to="/services/Linkutomobile" data-drupal-link-system-path="node/39">EzDrive</Link>
+                            <Link to="/services/automobile" data-drupal-link-system-path="node/39">EzDrive</Link>
                             </li>
                             <li>
                             <Link to="/services/pictures-entertainment" data-drupal-link-system-path="node/41">Pictures Entertainment</Link>
                             </li>
                             <li>
-                            <Link to="https://Linkcegroup.com.my/services/Linkdvisory">Advisory</Link>
+                            <Link to="https://Linkcegroup.com.my/services/advisory">Advisory</Link>
                             </li>
                         </ul>
                     </nav>

@@ -221,7 +221,7 @@ const Navbar = () => {
                                 </ul>
                                 <ul data-parentmenu="other" className={`${showSmallDeviceMenu?.otherServices ? 'active': ""}`}>
                                     <li>
-                                        <Link to="#"className="menu-back" onClick={() => setShowSmallDeviceMenu({})}>&lt; Back</Link>
+                                        <Link to="#" className="menu-back" onClick={() => setShowSmallDeviceMenu({})}>&lt; Back</Link>
                                     </li>
                                     <li>
                                          <HashLink onClick={() => setActiveList(false)} to="/services/corporation"><span>Corporation</span></HashLink>
