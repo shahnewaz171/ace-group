@@ -25,8 +25,8 @@ const Contact = () => {
                                     <div className="field-content">
                                         <div className="billboard" style={{ backgroundImage: "url('https://www.acegroup.com.my/sites/default/files/2021-01/Contact.jpg')" }}></div>
                                         <div className="container billboard-center text-center">
-                                            <h1>Contact</h1>
-                                            <p style={{color: '#004a7d'}}>DO REACH US IF YOU HAVE ANY ENQUIRIES.</p>
+                                            <h1 style={{fontWeight: 500}}>Contact</h1>
+                                            <p> <strong style={{fontWeight: 700}}>DO REACH US IF YOU HAVE ANY ENQUIRIES.</strong> </p>
                                         </div>
                                     </div>
                                 </div>
@@ -38,7 +38,7 @@ const Contact = () => {
                                         <form className="webform-submission-form webform-submission-add-form webform-submission-contact-form webform-submission-contact-add-form webform-submission-contact-node-2-form webform-submission-contact-node-2-add-form js-webform-submit-once">
                                             <div className="webform-elements form-group js-form-wrapper form-wrapper">
                                             <div className="text-center article body form-item js-form-item form-type-webform-markup form-item-form-intro-text form-no-label form-group">
-                                                <p><strong>We will certainly get back to you promptly during business hours.</strong></p>
+                                                <p><strong style={{fontWeight: 500}}>We will certainly get back to you promptly during business hours.</strong></p>
                                             </div>
                                             <div className="row form-wrapper form-group js-form-wrapper form-wrapper">
                                                 <div className="col-sm-6 form-group js-form-wrapper form-wrapper">

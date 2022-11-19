@@ -8,7 +8,9 @@
 }
 @font-face {
   font-family: 'Verlag';
-  src: url('./fonts/Verlag-Light.ttf');
+  src: url('./fonts/Verlag-Light.ttf'),
+      url('./fonts/Verlag-Bold.otf');
+
 }
 @font-face {
   font-family: 'Verlag Black';

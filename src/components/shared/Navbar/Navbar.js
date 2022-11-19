@@ -1,11 +1,10 @@
 import { size } from 'lodash';
 import React, { useState } from 'react';
-import { Link, useLocation, useNavigate } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import { HashLink } from 'react-router-hash-link';
 
 const Navbar = () => {
     const {pathname} = useLocation();
-    const navigate = useNavigate()
     const [navbarAnimation, setNavbarAnimation] = useState(false);
     const [activeList, setActiveList] = useState(false);
     const [showSubMenu, setShowSubMenu] = useState({});
@@ -29,12 +28,6 @@ const Navbar = () => {
     }
     const handleSmallDeviceMenu = (value) => {
         setShowSmallDeviceMenu({ [value]: true});
-    }
-
-    const goToDestination = (path) => {
-        if(path === 'strengths'){
-            navigate('');
-        }
     }
 
     return (
@@ -66,19 +59,19 @@ const Navbar = () => {
                             <div className="menu-left">
                                 <ul>
                                     <li data-submenu="discover" className={`${activeList && 'fade-in'} ${showSubMenu?.discover ? 'active' : ''}`} onMouseOver={ () => handleMouseOver ('discover')} onMouseOut={ () => handleMouseOut('discover')} style={{transitionDelay: activeList ? '0.5s' : '0.4s'}}>
-                                        <Link to="/"><span>Discover</span></Link>
+                                        <Link to="#"><span>Discover</span></Link>
                                     </li>
                                     <li data-submenu="banking" className={`${activeList && 'fade-in'} ${showSubMenu?.banking ? 'active' : ''}`} onMouseOver={ () => handleMouseOver ('banking')} onMouseOut={ () => handleMouseOut('banking')} style={{transitionDelay: activeList ? '0.6s' : '0.3s'}}>
-                                        <Link to="/"><span>Banking &amp; Finance</span></Link>
+                                        <Link to="#"><span>Banking &amp; Finance</span></Link>
                                     </li>
                                     <li data-submenu="other" className={`${activeList && 'fade-in'} ${showSubMenu?.otherServices ? 'active' : ''}`} onMouseOver={ () => handleMouseOver ('otherServices')} onMouseOut={ () => handleMouseOut('otherServices')} style={{transitionDelay: activeList ? '0.7s' : '0.2s'}}>
-                                        <Link to="/"><span>Other Services</span></Link>
+                                        <Link to="#"><span>Other Services</span></Link>
                                     </li>
                                     <li className={`${activeList && 'fade-in'}`} style={{transitionDelay: activeList ? '0.8s' : '0.1s'}}>
-                                        <Link to="/"><span>Insights</span></Link>
+                                        <HashLink onClick={() => setActiveList(false)} to="/insights"><span>Insights</span></HashLink>
                                     </li>
                                     <li className={`${activeList && 'fade-in'}`} style={{transitionDelay: activeList ? '0.8s' : '0s'}}>
-                                        <Link to="/"><span>Contact</span></Link>
+                                        <HashLink onClick={() => setActiveList(false)} to="/contact"><span>Contact</span></HashLink>
                                     </li>
                                 </ul>
                             </div>
@@ -110,48 +103,42 @@ const Navbar = () => {
                                 </ul>
                                 <ul data-parentmenu="banking" className={`${showSubMenu?.banking ? 'show': ""}`} onMouseOver={ () => handleMouseOver ('banking')} onMouseOut={ () => handleMouseOut ('banking')}>
                                     <li>
-                                        <Link to="/"className="menu-back">&lt; Back</Link>
+                                        <HashLink onClick={() => setActiveList(false)} to="/services/investment-bank"><span>Investment Bank</span></HashLink>
                                     </li>
                                     <li>
-                                        <Link to="/"><span>Investment Bank</span></Link>
+                                        <HashLink onClick={() => setActiveList(false)} to="/services/holdings"><span>Holdings</span></HashLink>
                                     </li>
                                     <li>
-                                        <Link to="/"><span>Holdings</span></Link>
+                                        <HashLink onClick={() => setActiveList(false)} to="/services/money-exchange"><span>Money Exchange</span></HashLink>
                                     </li>
                                     <li>
-                                        <Link to="/"><span>Money Exchange</span></Link>
+                                        <HashLink onClick={() => setActiveList(false)} to="/services/leasing"><span>Leasing</span></HashLink>
                                     </li>
                                     <li>
-                                        <Link to="/"><span>Leasing</span></Link>
+                                        <HashLink onClick={() => setActiveList(false)} to="/services/credit"><span>Credit</span></HashLink>
                                     </li>
                                     <li>
-                                        <Link to="/"><span>Credit</span></Link>
+                                        <HashLink onClick={() => setActiveList(false)} to="/services/capital-management"><span>Capital Management</span></HashLink>
                                     </li>
                                     <li>
-                                        <Link to="/"><span>Capital Management</span></Link>
-                                    </li>
-                                    <li>
-                                        <Link to="/"><span>Private Equity</span></Link>
+                                        <HashLink onClick={() => setActiveList(false)} to="/services/private-equity"><span>Private Equity</span></HashLink>
                                     </li>
                                 </ul>
                                 <ul data-parentmenu="other" className={`${showSubMenu?.otherServices ? 'show': ""}`} onMouseOver={ () => handleMouseOver ('otherServices')} onMouseOut={ () => handleMouseOut ('otherServices')}>
                                     <li>
-                                        <Link to="/"className="menu-back">&lt; Back</Link>
+                                        <HashLink onClick={() => setActiveList(false)} to="/services/corporation"><span>Corporation</span></HashLink>
                                     </li>
                                     <li>
-                                        <Link to="/"><span>Corporation</span></Link>
+                                        <HashLink onClick={() => setActiveList(false)} to="/services/asiacyberx"><span>Asiacyberx</span></HashLink>
                                     </li>
                                     <li>
-                                        <Link to="/"><span>Asiacyberx</span></Link>
+                                        <HashLink onClick={() => setActiveList(false)} to="/services/accelerator-network"><span>Accelerator Network</span></HashLink>
                                     </li>
                                     <li>
-                                        <Link to="/"><span>Accelerator Network</span></Link>
+                                        <HashLink onClick={() => setActiveList(false)} to="/services/automobile"><span>EzDrive</span></HashLink>
                                     </li>
                                     <li>
-                                        <Link to="/"><span>EzDrive</span></Link>
-                                    </li>
-                                    <li>
-                                        <Link to="/"><span>Pictures Entertainment</span></Link>
+                                        <HashLink onClick={() => setActiveList(false)} to="/services/pictures-entertainment"><span>Pictures Entertainment</span></HashLink>
                                     </li>
                                 </ul>
                             </div>
@@ -164,19 +151,19 @@ const Navbar = () => {
                             <div className="menu-left">
                                 <ul>
                                     <li data-submenu="discover" className={`${activeList && 'fade-in'} ${showSmallDeviceMenu?.discover ? 'active' : ''}`} onClick={ () => handleSmallDeviceMenu ('discover')} style={{transitionDelay: activeList ? '0.5s' : '0.4s'}}>
-                                        <Link to="/"><span>Discover</span></Link>
+                                        <Link to="#"><span>Discover</span></Link>
                                     </li>
                                     <li data-submenu="banking" className={`${activeList && 'fade-in'} ${showSmallDeviceMenu?.banking ? 'active' : ''}`} onClick={ () => handleSmallDeviceMenu ('banking')} style={{transitionDelay: activeList ? '0.6s' : '0.3s'}}>
-                                        <Link to="/"><span>Banking &amp; Finance</span></Link>
+                                        <Link to="#"><span>Banking &amp; Finance</span></Link>
                                     </li>
                                     <li data-submenu="other" className={`${activeList && 'fade-in'} ${showSmallDeviceMenu?.otherServices ? 'active' : ''}`} onClick={ () => handleSmallDeviceMenu ('otherServices')} style={{transitionDelay: activeList ? '0.7s' : '0.2s'}}>
-                                        <Link to="/"><span>Other Services</span></Link>
+                                        <Link to="#"><span>Other Services</span></Link>
                                     </li>
                                     <li className={`${activeList && 'fade-in'}`} style={{transitionDelay: activeList ? '0.8s' : '0.1s'}}>
-                                        <Link to="/"><span>Insights</span></Link>
+                                        <HashLink onClick={() => setActiveList(false)} to="/insights"><span>Insights</span></HashLink>
                                     </li>
                                     <li className={`${activeList && 'fade-in'}`} style={{transitionDelay: activeList ? '0.8s' : '0s'}}>
-                                        <Link to="/"><span>Contact</span></Link>
+                                        <HashLink onClick={() => setActiveList(false)} to="/contact"><span>Contact</span></HashLink>
                                     </li>
                                 </ul>
                             </div>
@@ -186,16 +173,24 @@ const Navbar = () => {
                                         <Link to="#" className="menu-back" onClick={() => setShowSmallDeviceMenu({})}>&lt; Back</Link>
                                     </li>
                                     <li>
-                                        <Link to="/"><span>Corporate Video</span></Link>
+                                        <HashLink onClick={() => setActiveList(false)} to="/discovery#top">
+                                            <span>Corporate Video</span>
+                                        </HashLink>
                                     </li>
                                     <li>
-                                        <Link to="/"><span>Strength</span></Link>
+                                        <HashLink onClick={() => setActiveList(false)} to="/discovery#strength">
+                                            <span>Strength</span>
+                                        </HashLink>
                                     </li>
                                     <li>
-                                        <Link to="/"><span>Responsibility</span></Link>
+                                        <HashLink onClick={() => setActiveList(false)} to="/discovery#responsibility">
+                                            <span>Responsibility</span>
+                                        </HashLink>
                                     </li>
                                     <li>
-                                        <Link to="/"><span>Leading Experts</span></Link>
+                                        <HashLink onClick={() => setActiveList(false)} to="/discovery#exports">
+                                            <span>Leading Experts</span>
+                                        </HashLink>
                                     </li>
                                 </ul>
                                 <ul data-parentmenu="banking" className={`${showSmallDeviceMenu?.banking ? 'active': ""}`}>
@@ -203,25 +198,25 @@ const Navbar = () => {
                                         <Link to="#"className="menu-back" onClick={() => setShowSmallDeviceMenu({})}>&lt; Back</Link>
                                     </li>
                                     <li>
-                                        <Link to="/"><span>Investment Bank</span></Link>
+                                        <HashLink onClick={() => setActiveList(false)} to="/services/investment-bank"><span>Investment Bank</span></HashLink>
                                     </li>
                                     <li>
-                                        <Link to="/"><span>Holdings</span></Link>
+                                        <HashLink onClick={() => setActiveList(false)} to="/services/holdings"><span>Holdings</span></HashLink>
                                     </li>
                                     <li>
-                                        <Link to="/"><span>Money Exchange</span></Link>
+                                        <HashLink onClick={() => setActiveList(false)} to="/services/money-exchange"><span>Money Exchange</span></HashLink>
                                     </li>
                                     <li>
-                                        <Link to="/"><span>Leasing</span></Link>
+                                        <HashLink onClick={() => setActiveList(false)} to="/services/leasing"><span>Leasing</span></HashLink>
                                     </li>
                                     <li>
-                                        <Link to="/"><span>Credit</span></Link>
+                                        <HashLink onClick={() => setActiveList(false)} to="/services/credit"><span>Credit</span></HashLink>
                                     </li>
                                     <li>
-                                        <Link to="/"><span>Capital Management</span></Link>
+                                        <HashLink onClick={() => setActiveList(false)} to="/services/capital-management"><span>Capital Management</span></HashLink>
                                     </li>
                                     <li>
-                                        <Link to="/"><span>Private Equity</span></Link>
+                                        <HashLink onClick={() => setActiveList(false)} to="/services/private-equity"><span>Private Equity</span></HashLink>
                                     </li>
                                 </ul>
                                 <ul data-parentmenu="other" className={`${showSmallDeviceMenu?.otherServices ? 'active': ""}`}>
@@ -229,19 +224,19 @@ const Navbar = () => {
                                         <Link to="#"className="menu-back" onClick={() => setShowSmallDeviceMenu({})}>&lt; Back</Link>
                                     </li>
                                     <li>
-                                        <Link to="/"><span>Corporation</span></Link>
+                                         <HashLink onClick={() => setActiveList(false)} to="/services/corporation"><span>Corporation</span></HashLink>
                                     </li>
                                     <li>
-                                        <Link to="/"><span>Asiacyberx</span></Link>
+                                         <HashLink onClick={() => setActiveList(false)} to="/services/asiacyberx"><span>Asiacyberx</span></HashLink>
                                     </li>
                                     <li>
-                                        <Link to="/"><span>Accelerator Network</span></Link>
+                                         <HashLink onClick={() => setActiveList(false)} to="/services/accelerator-network"><span>Accelerator Network</span></HashLink>
                                     </li>
                                     <li>
-                                        <Link to="/"><span>EzDrive</span></Link>
+                                         <HashLink onClick={() => setActiveList(false)} to="/services/automobile"><span>EzDrive</span></HashLink>
                                     </li>
                                     <li>
-                                        <Link to="/"><span>Pictures Entertainment</span></Link>
+                                         <HashLink onClick={() => setActiveList(false)} to="/services/pictures-entertainment"><span>Pictures Entertainment</span></HashLink>
                                     </li>
                                 </ul>
                             </div>
