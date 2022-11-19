@@ -6,6 +6,7 @@ import { CapitalManagement, Credit, Holdings, InvestmentBank, Leasing, MoneyExch
 import Contact from './components/Contact/Contact';
 import Corporate from './components/Discover/Corporate/Corporate';
 import Home from "./components/Home/Home";
+import InsightDetails from './components/InsightsAll/InsightDetails/InsightDetails';
 import InsightsAll from './components/InsightsAll/InsightsAll';
 import { AcceleratorNetwork, Asiacyberx, Automobile, Corporation, PicturesEntertainment } from './components/otherServices';
 import Footer from './components/shared/Footer/Footer';
@@ -20,6 +21,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="insights" element={<InsightsAll />} />
+        <Route path="insights/:id" element={<InsightDetails />} />
         <Route path="contact" element={<Contact />} />
         <Route path="discovery" element={<Corporate />} />
         <Route path="services/investment-bank" element={<InvestmentBank />} />

@@ -1756,16 +1756,16 @@ body .marbotnone {
     width: 100%;
   }
 
-  .insights-header {
-    padding-top: 120px;
+  body .insights-header {
+    padding-top: 120px !important;
   }
 
-  .insights-header {
+  body .insights-header {
     padding-left: 40px;
     padding-right: 40px;
   }
 
-  .insights-header span {
+  body .insights-header span {
     padding-left: 0;
   }
 
