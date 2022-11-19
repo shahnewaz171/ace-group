@@ -8,6 +8,7 @@ import Holdings from './components/Holdings/Holdings';
 import Home from "./components/Home/Home";
 import InsightsAll from './components/InsightsAll/InsightsAll';
 import InvestmentBank from './components/InvestmentBank/InvestmentBank';
+import MoneyExchange from './components/MoneyExchange/MoneyExchange';
 import Footer from './components/shared/Footer/Footer';
 import Navbar from './components/shared/Navbar/Navbar';
 
@@ -23,6 +24,7 @@ function App() {
         <Route path="discovery" element={<Corporate />} />
         <Route path="services/investment-bank" element={<InvestmentBank />} />
         <Route path="services/holdings" element={<Holdings />} />
+        <Route path="services/money-exchange" element={<MoneyExchange />} />
       </Routes>
       {/* Footer section */}
       <Footer />

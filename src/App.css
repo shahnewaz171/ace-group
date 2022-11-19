@@ -1002,7 +1002,8 @@ body .getintouch .cta-wrapper {
   margin-bottom: 50px;
 }
 .investment .slick-slider,
-.holdings .slick-slider {
+.holdings .slick-slider,
+.moneyExchange .slick-slider {
   margin-bottom: 50px;
 }
 
@@ -1859,6 +1860,10 @@ body .insights .billboard h1 {
   background-image: url('https://www.acegroup.com.my/sites/default/files/2021-01/Contact_28.jpg');
   background-position: center center;
 }
+.moneyExchange .billboard {
+  background-image: url('https://www.acegroup.com.my/sites/default/files/2021-01/Contact_11.jpg');
+  background-position: center center;
+}
 
 body
   .navbar
@@ -1903,7 +1908,8 @@ body
     color: #004a7d;
   }
   .investment .billboard,
-  .holdings .billboard {
+  .holdings .billboard,
+  .moneyExchange .billboard {
     display: none;
   }
 }
