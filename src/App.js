@@ -2,6 +2,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import "slick-carousel/slick/slick-theme.css";
 import "slick-carousel/slick/slick.css";
 import './App.css';
+import CapitalManagement from './components/CapitalManagement/CapitalManagement';
 import Contact from './components/Contact/Contact';
 import Credit from './components/Credit/Credit';
 import Corporate from './components/Discover/Corporate/Corporate';
@@ -29,6 +30,7 @@ function App() {
         <Route path="services/money-exchange" element={<MoneyExchange />} />
         <Route path="services/leasing" element={<Leasing />} />
         <Route path="services/credit" element={<Credit />} />
+        <Route path="services/capital-management" element={<CapitalManagement />} />
       </Routes>
       {/* Footer section */}
       <Footer />
