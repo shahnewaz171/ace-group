@@ -1,9 +1,12 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
+import { AppContext } from '../../../App';
 import { scrollToTop } from '../customMethod/scrollToTop';
 import './Footer.css';
 
 const Footer = () => {
+    const { contextData } = useContext(AppContext);
+
     return (
         <div className='footer-padding'>
             <footer className="footer container" role="contentinfo">
@@ -12,7 +15,7 @@ const Footer = () => {
                         <div className="layout layout--onecol">
                             <div className="layout__region layout__region--content">
                             <div className="field field--name-body field--type-text-with-summary field--label-hidden field--item">
-                                <p><Link to="/" onClick={scrollToTop}><img alt="logo" data-entity-type="file" height="55" src="https://www.acegroup.com.my/sites/default/files/inline-images/logo-acegroup.png" width="225" /></Link></p>
+                                <p><Link to="/" onClick={scrollToTop}><img alt="logo" data-entity-type="file" height="55" src={contextData?.logos?.logoV2} width="225" /></Link></p>
                                 <p>© 2021 ACE Group.<br />
                                     All rights reserved.
                                 </p>

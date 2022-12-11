@@ -8,9 +8,7 @@
 }
 @font-face {
   font-family: 'Verlag';
-  src: url('./fonts/Verlag-Light.ttf'),
-      url('./fonts/Verlag-Bold.otf');
-
+  src: url('./fonts/Verlag-Light.ttf'), url('./fonts/Verlag-Bold.otf');
 }
 @font-face {
   font-family: 'Verlag Black';
@@ -676,7 +674,8 @@ body
     width: -webkit-fill-available;
   }
 
-  .discover-page
+  body
+    .discover-page
     .views-field-field-billboard-description
     .billboard
     .billboard-center {

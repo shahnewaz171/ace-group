@@ -1,3 +1,4 @@
+import { createContext, useEffect, useState } from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import "slick-carousel/slick/slick-theme.css";
 import "slick-carousel/slick/slick.css";
@@ -14,34 +15,50 @@ import Footer from './components/shared/Footer/Footer';
 import Navbar from './components/shared/Navbar/Navbar';
 import NotFound from './components/shared/NotFound/NotFound';
 
+export const AppContext = createContext();
+
 function App() {
-  
+  const [contextData, setContextData] = useState({});
+
+  useEffect(() => {
+    fetch('https://stingray-app-3swkn.ondigitalocean.app/api-site-logo/')
+    .then(res => res.json())
+    .then(result => {
+        if(result){
+          setContextData((prevData) => ({...prevData, logos: result}))
+        }
+    })
+    .catch(err => console.error(err));
+  })
+
   return (
     <Router>
-      <Navbar />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="insights" element={<InsightsAll />} />
-        <Route path="insights/:id" element={<InsightDetails />} />
-        <Route path="contact" element={<Contact />} />
-        <Route path="discovery" element={<Corporate />} />
-        <Route path="services/investment-bank" element={<InvestmentBank />} />
-        <Route path="services/holdings" element={<Holdings />} />
-        <Route path="services/money-exchange" element={<MoneyExchange />} />
-        <Route path="services/leasing" element={<Leasing />} />
-        <Route path="services/credit" element={<Credit />} />
-        <Route path="services/capital-management" element={<CapitalManagement />} />
-        <Route path="services/private-equity" element={<PrivateEquity />} />
-        <Route path="services/corporation" element={<Corporation />} />
-        <Route path="services/asiacyberx" element={<Asiacyberx />} />
-        <Route path="services/accelerator-network" element={<AcceleratorNetwork />} />
-        <Route path="services/automobile" element={<Automobile />} />
-        <Route path="services/pictures-entertainment" element={<PicturesEntertainment />} />
-        <Route path="people/:id" element={<People />} />
-        <Route path="*" element={<NotFound />} />
-      </Routes>
-      {/* Footer section */}
-      <Footer />
+      <AppContext.Provider value={{contextData, setContextData}}>
+        <Navbar />
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="insights" element={<InsightsAll />} />
+            <Route path="insights/:id" element={<InsightDetails />} />
+            <Route path="contact" element={<Contact />} />
+            <Route path="discovery" element={<Corporate />} />
+            <Route path="services/investment-bank" element={<InvestmentBank />} />
+            <Route path="services/holdings" element={<Holdings />} />
+            <Route path="services/money-exchange" element={<MoneyExchange />} />
+            <Route path="services/leasing" element={<Leasing />} />
+            <Route path="services/credit" element={<Credit />} />
+            <Route path="services/capital-management" element={<CapitalManagement />} />
+            <Route path="services/private-equity" element={<PrivateEquity />} />
+            <Route path="services/corporation" element={<Corporation />} />
+            <Route path="services/asiacyberx" element={<Asiacyberx />} />
+            <Route path="services/accelerator-network" element={<AcceleratorNetwork />} />
+            <Route path="services/automobile" element={<Automobile />} />
+            <Route path="services/pictures-entertainment" element={<PicturesEntertainment />} />
+            <Route path="people/:id" element={<People />} />
+            <Route path="*" element={<NotFound />} />
+          </Routes>
+        {/* Footer section */}
+        <Footer />
+      </AppContext.Provider>
     </Router>
   );
 }
