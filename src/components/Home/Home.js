@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import GetInTouchBanner from '../shared/GetInTouchBanner/GetInTouchBanner';
 import HeaderContact from '../shared/HeaderContact/HeaderContact';
 import Insights from '../shared/Insights/Insights';
@@ -7,6 +7,19 @@ import ServicesBanner from '../shared/ServicesBanner/ServicesBanner';
 import './Home.module.css';
 
 const Home = () => {
+    const [services, setServices] = useState([]);
+
+  useEffect(() => {
+    fetch('https://stingray-app-3swkn.ondigitalocean.app/api-service-list/')
+    .then(res => res.json())
+    .then(result => {
+        if(result){
+            setServices(result);
+        }
+    })
+    .catch(err => console.error(err));
+  }, [])
+
     return (
        <>
         {/* Main head banner section */}
@@ -28,7 +41,7 @@ const Home = () => {
         <HeaderContact />
 
         {/* services banner */}
-        <ServicesBanner />
+        <ServicesBanner services={services} />
 
         {/* Insights */}
         <Insights />

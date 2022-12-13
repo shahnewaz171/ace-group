@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import Slider from 'react-slick';
 import './ServicesBanner.css';
 
-const ServicesBanner = () => {
+const ServicesBanner = ({ services }) => {
     const settings = {
         className: "",
         dots: false,
@@ -45,66 +45,20 @@ const ServicesBanner = () => {
                                 
                         <div className="view-content">
                             <Slider {...settings}>
-                                <div className="views-field views-field-view-node">
-                                    <div className="field-content slide-wrapper">
-                                        <Link to="/services/leasing" onClick={scrollToTop}>
-                                        <div className="slide-inner">
-                                            <img src="https://www.acegroup.com.my/sites/default/files/2020-12/Contact-2_5.jpg" className="img img-fluid" alt='' />
+                                {services?.map(service => {
+                                    return (
+                                        <div key={service?.id} className="views-field views-field-view-node">
+                                            <div className="field-content slide-wrapper">
+                                                <Link to="/services/leasing" onClick={scrollToTop}>
+                                                <div className="slide-inner">
+                                                    <img src={service?.coverImg} className="img img-fluid" alt='' />
+                                                </div>
+                                                <h4 className='service-title'>{service?.name}</h4>
+                                                </Link>
+                                            </div>
                                         </div>
-                                        <h4 className='service-title'>Leasing</h4>
-                                        </Link>
-                                    </div>
-                                </div>
-                                <div className="views-field views-field-view-node">
-                                    <div className="field-content slide-wrapper">
-                                        <Link to="/services/private-equity" onClick={scrollToTop}>
-                                        <div className="slide-inner">
-                                            <img src="https://www.acegroup.com.my/sites/default/files/2021-04/Contact2_13.jpg" className="img img-fluid"  alt='' />  
-                                        </div>
-                                        <h4 className='service-title'>Private Equity</h4>
-                                        </Link>
-                                    </div>
-                                </div>
-                                <div className="views-field views-field-view-node">
-                                    <div className="field-content slide-wrapper">
-                                        <Link to="/services/investment-bank" onClick={scrollToTop}>
-                                        <div className="slide-inner">
-                                            <img src="https://www.acegroup.com.my/sites/default/files/2021-01/Contact2_0.jpg" className="img img-fluid" alt='' />   
-                                        </div>
-                                        <h4 className='service-title'>Investment Bank</h4>
-                                        </Link>
-                                    </div>
-                                </div>
-                                <div className="views-field views-field-view-node">
-                                    <div className="field-content slide-wrapper">
-                                        <Link to="/services/capital-management" onClick={scrollToTop}>
-                                        <div className="slide-inner">
-                                            <img src="https://www.acegroup.com.my/sites/default/files/2021-04/Contact2_14.jpg" className="img img-fluid" alt='' />  
-                                        </div>
-                                        <h4 className='service-title'>Capital Management</h4>
-                                        </Link>
-                                    </div>
-                                </div>
-                                <div className="views-field views-field-view-node">
-                                    <div className="field-content slide-wrapper">
-                                        <Link to="/services/money-exchange" onClick={scrollToTop}>
-                                        <div className="slide-inner">
-                                            <img src="https://www.acegroup.com.my/sites/default/files/2021-01/Contact2_4.jpg" className="img img-fluid" alt='' />   
-                                        </div>
-                                        <h4 className='service-title'>Money Exchange </h4>
-                                        </Link>
-                                    </div>
-                                </div>
-                                <div className="views-field views-field-view-node">
-                                    <div className="field-content slide-wrapper">
-                                        <Link to="/services/credit" onClick={scrollToTop}>
-                                        <div className="slide-inner">
-                                            <img src="https://www.acegroup.com.my/sites/default/files/2021-04/Contact2_5.jpg" className="img img-fluid" alt='' /> 
-                                        </div>
-                                        <h4 className='service-title'>Credit</h4>
-                                        </Link>
-                                    </div>
-                                </div>
+                                    )
+                                })}
                             </Slider>
                         </div>
                     </div>
