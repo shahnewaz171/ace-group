@@ -62,7 +62,7 @@ const ServicesBanner = () => {
                                     return (
                                         <div key={service?.id} className="views-field views-field-view-node">
                                             <div className="field-content slide-wrapper">
-                                                <Link to="/services/leasing" onClick={scrollToTop}>
+                                                <Link to={`/services/${service?.id}`} onClick={scrollToTop}>
                                                 <div className="slide-inner">
                                                     <img src={service?.coverImg} className="img img-fluid" alt='' />
                                                 </div>

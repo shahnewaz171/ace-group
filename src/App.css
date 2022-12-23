@@ -1002,13 +1002,8 @@ body .getintouch .cta-wrapper {
   padding-right: 80px;
   margin-bottom: 50px;
 }
-.investment .slick-slider,
-.holdings .slick-slider,
-.moneyExchange .slick-slider,
-.leasing .billboard,
-.credit .billboard,
-.capital-management .billboard,
-.private-equity .billboard,
+
+.bankingFinance .slick-slider,
 .corporation .billboard,
 .asiacyberx .billboard,
 .acceleratorNetwork .billboard,
@@ -1862,32 +1857,8 @@ body .insights .billboard h1 {
 
   margin-bottom: 50px;
 }
-.investment .billboard {
-  background-image: url('https://www.acegroup.com.my/sites/default/files/2021-01/Contact_1.jpg');
-  background-position: center center;
-}
-.holdings .billboard {
-  background-image: url('https://www.acegroup.com.my/sites/default/files/2021-01/Contact_28.jpg');
-  background-position: center center;
-}
-.moneyExchange .billboard {
-  background-image: url('https://www.acegroup.com.my/sites/default/files/2021-01/Contact_11.jpg');
-  background-position: center center;
-}
-.leasing .billboard {
-  background-image: url('https://www.acegroup.com.my/sites/default/files/2021-01/Contact_12.jpg');
-  background-position: center center;
-}
-.credit .billboard {
-  background-image: url('https://www.acegroup.com.my/sites/default/files/2021-04/Contact_3.jpg');
-  background-position: center center;
-}
-.capital-management .billboard {
-  background-image: url('https://www.acegroup.com.my/sites/default/files/2021-04/Contact_11.jpg');
-  background-position: center center;
-}
-.private-equity .billboard {
-  background-image: url('https://www.acegroup.com.my/sites/default/files/2021-04/Contact_10.jpg');
+
+.bankingFinance .billboard {
   background-position: center center;
 }
 .corporation .billboard {
@@ -1953,13 +1924,7 @@ body
     padding-bottom: 0;
     color: #004a7d;
   }
-  .investment .billboard,
-  .holdings .billboard,
-  .moneyExchange .billboard,
-  .leasing .billboard,
-  .credit .billboard,
-  .capital-management .billboard,
-  .private-equity .billboard,
+  .bankingFinance .billboard,
   .corporation .billboard,
   .asiacyberx .billboard,
   .acceleratorNetwork .billboard,
