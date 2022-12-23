@@ -11,8 +11,7 @@ const Insights = () => {
         .then(res => res.json())
         .then(result => {
             if(result){
-                const data = result.slice(0, 3);
-                console.log(result);
+                const data = result?.slice(0, 3);
                 setInsights(data);
             }
         })
