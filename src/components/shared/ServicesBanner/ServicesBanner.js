@@ -1,9 +1,22 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import Slider from 'react-slick';
 import './ServicesBanner.css';
 
-const ServicesBanner = ({ services }) => {
+const ServicesBanner = () => {
+    const [services, setServices] = useState([]);
+
+    useEffect(() => {
+        fetch('https://walrus-app-vyzvh.ondigitalocean.app/api-service-list/')
+        .then(res => res.json())
+        .then(result => {
+            if(result){
+                setServices(result);
+            }
+        })
+        .catch(err => console.error(err));
+      }, [])
+
     const settings = {
         className: "",
         dots: false,

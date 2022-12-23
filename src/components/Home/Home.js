@@ -8,29 +8,17 @@ import './Home.module.css';
 
 const Home = () => {
     const [homeMainBanner, setHomeMainBanner] = useState({});
-    const [services, setServices] = useState([]);
 
-  useEffect(() => {
-    fetch('https://walrus-app-vyzvh.ondigitalocean.app/api-home-page-content/')
-    .then(res => res.json())
-    .then(result => {
-        if(result){
-            setHomeMainBanner(result);
-        }
-    })
-    .catch(err => console.error(err));
-  }, [])  
-
-  useEffect(() => {
-    fetch('https://walrus-app-vyzvh.ondigitalocean.app/api-service-list/')
-    .then(res => res.json())
-    .then(result => {
-        if(result){
-            setServices(result);
-        }
-    })
-    .catch(err => console.error(err));
-  }, [])
+    useEffect(() => {
+        fetch('https://walrus-app-vyzvh.ondigitalocean.app/api-home-page-content/')
+        .then(res => res.json())
+        .then(result => {
+            if(result){
+                setHomeMainBanner(result);
+            }
+        })
+        .catch(err => console.error(err));
+    }, [])  
 
     return (
        <>
@@ -53,7 +41,7 @@ const Home = () => {
         <HeaderContact />
 
         {/* services banner */}
-        <ServicesBanner services={services} />
+        <ServicesBanner />
 
         {/* Insights */}
         <Insights />
