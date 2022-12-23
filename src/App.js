@@ -21,7 +21,7 @@ function App() {
   const [contextData, setContextData] = useState({});
 
   useEffect(() => {
-    fetch('https://stingray-app-3swkn.ondigitalocean.app/api-site-logo/')
+    fetch('https://walrus-app-vyzvh.ondigitalocean.app/api-site-logo/')
     .then(res => res.json())
     .then(result => {
         if(result){

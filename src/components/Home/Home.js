@@ -7,10 +7,22 @@ import ServicesBanner from '../shared/ServicesBanner/ServicesBanner';
 import './Home.module.css';
 
 const Home = () => {
+    const [homeMainBanner, setHomeMainBanner] = useState({});
     const [services, setServices] = useState([]);
 
   useEffect(() => {
-    fetch('https://stingray-app-3swkn.ondigitalocean.app/api-service-list/')
+    fetch('https://walrus-app-vyzvh.ondigitalocean.app/api-home-page-content/')
+    .then(res => res.json())
+    .then(result => {
+        if(result){
+            setHomeMainBanner(result);
+        }
+    })
+    .catch(err => console.error(err));
+  }, [])  
+
+  useEffect(() => {
+    fetch('https://walrus-app-vyzvh.ondigitalocean.app/api-service-list/')
     .then(res => res.json())
     .then(result => {
         if(result){
@@ -29,7 +41,7 @@ const Home = () => {
                     <div className='views-row'>
                         <div className='views-field views-field-field-bill'>
                             <div className='field-content'>
-                                <MainBanner />
+                                <MainBanner homeMainBanner={homeMainBanner} />
                             </div>
                         </div>
                     </div>
