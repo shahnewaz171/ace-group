@@ -44,7 +44,7 @@ const Insights = () => {
                                                 </div>
                                                 <div className="views-field views-field-body">
                                                     <div className="field-content">
-                                                    <p>{item?.content?.slice(0, 136)}</p>
+                                                    <p>{item?.content_for_list?.slice(0, 130)}...</p>
                                                     </div>
                                                 </div>
                                                 <div className="views-field views-field-view-node"><span className="field-content"><Link to={`/insights/${item?.id}`} onClick={scrollToTop}className="new-cta"><span>READ MORE</span></Link></span></div>
