@@ -1,10 +1,12 @@
 import { size } from 'lodash';
-import React, { useState } from 'react';
+import React, { useContext, useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { HashLink } from 'react-router-hash-link';
+import { AppContext } from '../../../App';
 import { scrollToTop } from '../customMethod/scrollToTop';
 
 const Navbar = () => {
+    const { contextData } = useContext(AppContext);
     const {pathname} = useLocation();
     const [navbarAnimation, setNavbarAnimation] = useState(false);
     const [activeList, setActiveList] = useState(false);
@@ -40,9 +42,9 @@ const Navbar = () => {
                     <div className="navi-center">
                         <Link to="/" onClick={scrollToTop} className={`logo navbar-btn ${activeList ? 'overlay' : ''}`}>
                             {(pathname === '/' || pathname.includes('/contact')) && (
-                                <img src="https://www.acegroup.com.my/sites/default/files/logo-acegroup%402x-white.png" alt="Home" className='home-icon-white' />
+                                <img src={contextData?.logos?.logoV1} alt="Home" className='home-icon-white' />
                             )}
-                            <img src="https://www.acegroup.com.my/sites/default/files/logo-acegroup%402x.png" alt="Home" className={`${(pathname === '/' || pathname.includes('/contact')) && 'home-icon-blue'}`} />
+                            <img src={contextData?.logos?.logoV2} alt="Home" className={`${(pathname === '/' || pathname.includes('/contact')) && 'home-icon-blue'}`} />
                         </Link>
                     </div>
                     <div className="navi-right">

@@ -1,8 +1,22 @@
-import React from 'react';
+// import parse from 'html-react-parser';
+import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { scrollToTop } from '../customMethod/scrollToTop';
 
 const Insights = () => {
+    const [insights, setInsights] = useState([]);
+
+    useEffect(() => {
+        fetch('https://walrus-app-vyzvh.ondigitalocean.app/api-insights/')
+        .then(res => res.json())
+        .then(result => {
+            if(result){
+                const data = result?.slice(0, 3);
+                setInsights(data);
+            }
+        })
+        .catch(err => console.error(err));
+      }, [])  
 
     return (
         <>
@@ -18,48 +32,25 @@ const Insights = () => {
                         <div className="view-content">
                             <div className="insights-list">
                                 <ul>
-                                    <li>
-                                        <div className="views-field views-field-field-insight-category">
-                                            <div className="field-content"><Link to="/taxonomy/term/15" onClick={scrollToTop}>Pictures Entertainment</Link></div>
-                                        </div>
-                                        <div className="views-field views-field-title">
-                                            <h3 className="field-content"><Link to="/insights/ace-pictures-bags-coveted-world-media-festival-award" onClick={scrollToTop}>ACE PICTURES BAGS COVETED WORLD MEDIA FESTIVAL AWARD</Link></h3>
-                                        </div>
-                                        <div className="views-field views-field-body">
-                                            <div className="field-content">
-                                            <p>INSPIRED by true events, the first inspirational short series by ACE Pictures - a subsidiary of ACE Holdings Berhad – follows the story o</p>
-                                            </div>
-                                        </div>
-                                        <div className="views-field views-field-view-node"><span className="field-content"><Link to="/insights/ace-pictures-bags-coveted-world-media-festival-award" onClick={scrollToTop}className="new-cta"><span>READ MORE</span></Link></span></div>
-                                    </li>
-                                    <li>
-                                        <div className="views-field views-field-field-insight-category">
-                                            <div className="field-content"><Link to="/taxonomy/term/15" onClick={scrollToTop}>Pictures Entertainment</Link></div>
-                                        </div>
-                                        <div className="views-field views-field-title">
-                                            <h3 className="field-content"><Link to="#" onClick={scrollToTop}>FORMER SQUASH CHAMPION COLLABORATES WITH ACE PICTURES ENTERTAINMENT TO PRODUCE THE BIOPIC "I AM NICOL DAVID"</Link></h3>
-                                        </div>
-                                        <div className="views-field views-field-body">
-                                            <div className="field-content">
-                                            <p>A household name in the world of sports - and throughout the world, there is no one quite as intriguing as the legendary Datuk Nicol Davi</p>
-                                            </div>
-                                        </div>
-                                        <div className="views-field views-field-view-node"><span className="field-content"><Link to="/insights/former-squash-champion-collaborates-ace-pictures-entertainment-produce-biopic-i-am-nicol-0" className="new-cta"><span>READ MORE</span></Link></span></div>
-                                    </li>
-                                    <li>
-                                        <div className="views-field views-field-field-insight-category">
-                                            <div className="field-content"><Link to="/taxonomy/term/4" onClick={scrollToTop}>Holdings</Link></div>
-                                        </div>
-                                        <div className="views-field views-field-title">
-                                            <h3 className="field-content"><Link to="/insights/announcement-ace-holdings-berhad" onClick={scrollToTop}>ANNOUNCEMENT (ACE HOLDINGS BERHAD)</Link></h3>
-                                        </div>
-                                        <div className="views-field views-field-body">
-                                            <div className="field-content">
-                                            <p>SCAM ALERT: BEWARE OF INDIVIDUALS IMPERSONATING AS AGENTS/REPRESENTATIVES OF ACE HOLDINGS BERHAD AND ITS SUBSIDIARIES (“ACE GROUP”)</p>
-                                            </div>
-                                        </div>
-                                        <div className="views-field views-field-view-node"><span className="field-content"><Link to="/insights/announcement-ace-holdings-berhad" onClick={scrollToTop} className="new-cta"><span>READ MORE</span></Link></span></div>
-                                    </li>
+                                    {insights?.map(item => {
+                                        
+                                        return (
+                                            <li key={item?.id}>
+                                                <div className="views-field views-field-field-insight-category">
+                                                    <div className="field-content">{item?.category?.category_name}</div>
+                                                </div>
+                                                <div className="views-field views-field-title">
+                                                    <h3 className="field-content"><Link to={`/insights/${item?.id}`} onClick={scrollToTop}>{item?.title}</Link></h3>
+                                                </div>
+                                                <div className="views-field views-field-body">
+                                                    <div className="field-content">
+                                                    <p>{item?.content_for_list?.slice(0, 130)}...</p>
+                                                    </div>
+                                                </div>
+                                                <div className="views-field views-field-view-node"><span className="field-content"><Link to={`/insights/${item?.id}`} onClick={scrollToTop}className="new-cta"><span>READ MORE</span></Link></span></div>
+                                            </li>
+                                        )
+                                    })}
                                 </ul>
                             </div>
                         </div>

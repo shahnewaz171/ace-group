@@ -1,8 +1,21 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { MdEmail } from "react-icons/md";
 import './HeaderContact.css';
 
 const HeaderContact = () => {
+    const [contactInfo, setContactInfo] = useState({});
+
+    useEffect(() => {
+        fetch(`https://walrus-app-vyzvh.ondigitalocean.app/api-contact-info/`)
+        .then(res => res.json())
+        .then(result => {
+            if(result?.id){
+                setContactInfo(result);
+            }
+        })
+        .catch(err => console.error(err));
+      }, [])  
+
     return (
         <section className='block block-block-content block-block-contentbf1ec91c-4096-48a1-b5c9-de5991c7db13 clearfix'>
             <div className="layout layout--onecol">
@@ -14,10 +27,9 @@ const HeaderContact = () => {
                                 <ul className="list-inline">
                                     <li>CONTACT INFORMATION:</li>
                                     <li className='contact-email-icon'>
-                                    {/* <p aria-hidden="true" className="fa fa-envelope">&nbsp;</p> */}
                                         <MdEmail />
                                     </li>
-                                    <li><a href="mailto:info@test.com" target="_blank" rel="noreferrer">EMAIL US</a></li>
+                                    <li><a href={`mailto:${contactInfo?.email}`} target="_blank" rel="noreferrer">EMAIL US</a></li>
                                 </ul>
                             </div>
                         </div>
