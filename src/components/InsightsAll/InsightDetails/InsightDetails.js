@@ -1,6 +1,7 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import parse from 'html-react-parser';
 import React, { useEffect, useState } from 'react';
-import { useParams } from 'react-router-dom';
+import { useNavigate, useParams } from 'react-router-dom';
 import GetInTouchBanner from '../../shared/GetInTouchBanner/GetInTouchBanner';
 import HeaderContact from '../../shared/HeaderContact/HeaderContact';
 import Insights from '../../shared/Insights/Insights';
@@ -8,6 +9,7 @@ import Insights from '../../shared/Insights/Insights';
 const InsightDetails = () => {
     const { id } = useParams();
     const [insightInfo, setInsightInfo] = useState({});
+    const navigate = useNavigate();
 
     useEffect(() => {
         fetch(`https://walrus-app-vyzvh.ondigitalocean.app/api-insights/${id}`)
@@ -17,9 +19,15 @@ const InsightDetails = () => {
                 const date = new Date(result?.added);
                 const getDate = `${date?.getDate()} ${date?.toLocaleString('default', { month: 'long' })} ${date?.getFullYear()}`;
                 setInsightInfo({...result, added: getDate});
+            } else{
+                navigate('*');
             }
         })
-        .catch(err => console.error(err));
+        .catch(err => {
+            if(err){
+                navigate('*');
+            }
+        });
       }, [id])  
     
     return (

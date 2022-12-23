@@ -1,6 +1,7 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import parse from 'html-react-parser';
 import React, { useEffect, useState } from 'react';
-import { useParams } from 'react-router-dom';
+import { useNavigate, useParams } from 'react-router-dom';
 import GetInTouchBanner from '../../shared/GetInTouchBanner/GetInTouchBanner';
 import HeaderContact from '../../shared/HeaderContact/HeaderContact';
 import ServicesBanner from '../../shared/ServicesBanner/ServicesBanner';
@@ -8,6 +9,7 @@ import ServicesBanner from '../../shared/ServicesBanner/ServicesBanner';
 const BankingFinanceServices = () => {
     const { id } = useParams();
     const [bankingFinanceServiceInfo, setBankingFinanceServiceInfo] = useState({});
+    const navigate = useNavigate();
 
     useEffect(() => {
         fetch(`https://walrus-app-vyzvh.ondigitalocean.app/api-service-details/${id}`)
@@ -15,9 +17,15 @@ const BankingFinanceServices = () => {
         .then(result => {
             if(result?.id){
                 setBankingFinanceServiceInfo(result);
+            } else{
+                navigate('*');
             }
         })
-        .catch(err => console.error(err));
+        .catch(err => {
+            if(err){
+                navigate('*');
+            }
+        });
       }, [id])  
 
     return (
